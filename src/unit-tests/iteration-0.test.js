@@ -1,10 +1,24 @@
-import helper from '../helper/HelperFunctions';
+import Helper from '../helper/HelperFunctions';
+import mockData from './mockData';
 
-const { range } = helper;
+// const { countyObject } = helper;
 
-describe('Range Test', () => {
+describe('County Object', () => {
+  let testHelper;
+  beforeEach(() => {
+    testHelper = new Helper();
 
-  test('should be defined', () => {
-    expect(range).toBe('object')
+  })
+
+  it('should be defined', () => {
+    expect(typeof testHelper).toBe('object')
+    
   });
-})
+
+  it('should return an object', () => {
+    // console.log(helper.data)
+    expect(typeof testHelper.data).toBe('object')
+
+  })
+
+});

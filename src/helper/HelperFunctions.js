@@ -3,52 +3,29 @@ import { range } from 'lodash';
 import Papa from 'papaparse';
 
 
+const _ = require('lodash/range');
 
 class Helper extends Component {
-
-
-var _ = require('lodash/range');
-
-//lodash is always _.methodName
-const findRange = (houseFrom, houseTo) => {
- return _.range(num1, num2);
-};
-
-const parsed = Papa.parse(file, {
-  header: true,
-  dynamicTyping: true,
-  complete: function(results) {
-    data = results;
-    console.log(data);
+  constructor(data) {
+    super(data);
+    this.data = this.countyObject();
   }
-})
+
+ countyObject() {
+  return {}
+ }
+
 
 }
-const precient8 = [
-    {
-      county: 'Summit',
-      id: 902642,
-      houseFrom: 701,
-      houseTo: 889,
-      stDistrictCode: 'E',
-      stName: 'Anemone',
-      stTypeCode: 'TRL',
-      precinct: 2086159008
-  },
-    {
-      county: 'Summit',
-      id: 600917718,
-      houseFrom: 736,
-      houseTo: 751,
-      stateDistrictCode: 'W'
-      stName: 'Anemone',
-      stTypeCode: 'TRL',
-      precinct: 2086159008
-    },
-];
-
 
 export default Helper;
 
 
 
+// cleanData() {
+// const mapped = precient8.map(pre => {
+//   let homeFrom = pre.houseFrom
+//   let homeTo = pre.houseTo
+//   return _.range(homeFrom, homeTo + 1)   
+//   })
+// }
