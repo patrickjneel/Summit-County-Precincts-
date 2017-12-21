@@ -1,7 +1,7 @@
 import Helper from '../helper/HelperFunctions';
 import mockData from './mockData';
 
-// const { countyObject } = helper;
+// const { countyData } = helper;
 
 describe('County Object', () => {
   let testHelper;
@@ -20,9 +20,11 @@ describe('County Object', () => {
 
   })
 
-  it.only('should have a key of county and id', () => {
+  it.only('county data should have a key of county', () => {
     const mockCounty = {county: 'SUMMIT'}
-    expect(testHelper.countyObject).objectContaining({
+    console.log(testHelper.data)
+
+    expect(testHelper.countyData).objectContaining({
       mockCounty
       
     })

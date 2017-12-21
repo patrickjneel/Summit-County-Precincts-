@@ -8,18 +8,20 @@ const _ = require('lodash/range');
 class Helper extends Component {
   constructor(data) {
     super(data);
-    this.data = this.countyObject();
+    this.data = this.countyData();
   }
 
- countyObject() {
+ countyData() {
   return {
-    county: '',
+    county: 'SUMMIT',
     id: '',
     houseNumFrm: '',
     houseNumTo: '',
     stDisCode: '',
     stName: '',
-    stTypeCode: ''
+    stTypeCode: '',
+    precient: '',
+    split: null
   }
  }
 
