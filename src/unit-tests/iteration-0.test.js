@@ -28,18 +28,19 @@ describe('County Object', () => {
     })
   })
 
-  it.skip('should have a keys of house to and house from', () => {
-    expect(testHelper.data).objectContaining({
-      houseNumFrm: expect.any(123434),
-      houseNumTo: expect.any(54545)
+  it('should have a keys of house to and house from', () => {
+    expect.objectContaining({
+      houseNumFrm: expect.any(''),
+      houseNumTo: expect.any('')
     })
   })
 
-  it.skip('should have a street Code, street Name, and street Type Code', () => {
-    expect(testHelper.data).objectContaining({
+  it('should have a street Code, street Name, and street Type Code', () => {
+    expect.objectContaining({
       stDisCode: expect.any(''),
       stName: expect.any(''),
-      stTypeCode: expect.any('')
+      stTypeCode: expect.any(''),
+      split: expect.any(null)
     })
   })
 
