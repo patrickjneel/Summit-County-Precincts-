@@ -12,7 +12,15 @@ class Helper extends Component {
   }
 
  countyObject() {
-  return {}
+  return {
+    county: '',
+    id: '',
+    houseNumFrm: '',
+    houseNumTo: '',
+    stDisCode: '',
+    stName: '',
+    stTypeCode: ''
+  }
  }
 
 
