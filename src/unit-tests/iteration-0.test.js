@@ -5,6 +5,6 @@ const { range } = helper;
 describe('Range Test', () => {
 
   test('should be defined', () => {
-    expect(range).toBe('func')
+    expect(range).toBe('object')
   });
 })
