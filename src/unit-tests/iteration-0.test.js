@@ -20,12 +20,10 @@ describe('County Object', () => {
 
   })
 
-  it.only('county data should have a key of county', () => {
-    const mockCounty = {county: 'SUMMIT'}
+  it('county data should have a key of county', () => {
     console.log(testHelper.data)
-
-    expect(testHelper.countyData).objectContaining({
-      mockCounty
+    expect.objectContaining({
+      county: expect.any('SUMMIT')
       
     })
   })
