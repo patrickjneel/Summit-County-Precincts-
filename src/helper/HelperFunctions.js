@@ -1,11 +1,16 @@
+import React, { Component } from 'react';
 import { range } from 'lodash';
-import Papaparse from 'papaparse';
+import Papa from 'papaparse';
+
+
+
+class Helper extends Component {
 
 
 var _ = require('lodash/range');
 
 //lodash is always _.methodName
-const findRange = (num1, num2) => {
+const findRange = (houseFrom, houseTo) => {
  return _.range(num1, num2);
 };
 
@@ -18,10 +23,32 @@ const parsed = Papa.parse(file, {
   }
 })
 
-//function that takes in data and and also uses findRange to get the full list of addresses.
+}
+const precient8 = [
+    {
+      county: 'Summit',
+      id: 902642,
+      houseFrom: 701,
+      houseTo: 889,
+      stDistrictCode: 'E',
+      stName: 'Anemone',
+      stTypeCode: 'TRL',
+      precinct: 2086159008
+  },
+    {
+      county: 'Summit',
+      id: 600917718,
+      houseFrom: 736,
+      houseTo: 751,
+      stateDistrictCode: 'W'
+      stName: 'Anemone',
+      stTypeCode: 'TRL',
+      precinct: 2086159008
+    },
+];
 
 
-
+export default Helper;
 
 
 
