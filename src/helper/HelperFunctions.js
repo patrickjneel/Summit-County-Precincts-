@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { range } from 'lodash';
-import Papa from 'papaparse';
+import  range  from 'lodash/range';
+import mockData from './mockData';
 
 
-const _ = require('lodash/range');
+
+// var _ = require('lodash/range');
 
 class Helper extends Component {
   constructor(data) {
@@ -25,6 +26,10 @@ class Helper extends Component {
   }
  }
 
+findRange(houseFrom, houseTo) {
+  return range(houseFrom, houseTo + 1)   
+
+}
 
 }
 
@@ -32,10 +37,3 @@ export default Helper;
 
 
 
-// cleanData() {
-// const mapped = precient8.map(pre => {
-//   let homeFrom = pre.houseFrom
-//   let homeTo = pre.houseTo
-//   return _.range(homeFrom, homeTo + 1)   
-//   })
-// }

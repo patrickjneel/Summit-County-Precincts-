@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Search from '../search/Search';
 import './App.css';
+import Papa from 'papaparse'
 
 class App extends Component {
 
@@ -10,7 +11,7 @@ class App extends Component {
 
 
   render() {
-    
+
     return (
       <div className="App">
         <Search />
