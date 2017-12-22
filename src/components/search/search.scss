@@ -1,0 +1,23 @@
+.search-area {
+  background-image: url('../../assets/aspen2.jpg');
+  display: flex;
+  filter: grayscale(1);
+  flex-direction: column;
+
+    h2 {
+      color: #657e8f;
+      display: flex;
+      font-size: 48px;
+      justify-content: center;
+    }
+
+    input {
+      display: flex;
+      justify-content: flex-end;
+      height: 20px;
+      margin: 7px;
+      width: 275px;
+    }
+}
+
+
