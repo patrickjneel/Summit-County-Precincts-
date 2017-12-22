@@ -1,0 +1,15 @@
+.search-area {
+  background-image: url("../../assets/aspen2.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .search-area .title {
+    color: #ffffff;
+    font-size: 52px; }
+  .search-area .search-bar {
+    color: #8C8D46;
+    font-size: 24px;
+    height: 27px;
+    margin: 7px;
+    width: 345px; }
