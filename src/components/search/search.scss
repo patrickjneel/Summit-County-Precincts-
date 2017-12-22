@@ -1,22 +1,22 @@
 .search-area {
   background-image: url('../../assets/aspen2.jpg');
   display: flex;
-  filter: grayscale(1);
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    h2 {
-      color: #657e8f;
-      display: flex;
-      font-size: 48px;
-      justify-content: center;
+    .title {
+      color: #ffffff;
+      font-size: 52px;
+      
     }
 
-    input {
-      display: flex;
-      justify-content: flex-end;
-      height: 20px;
+    .search-bar {
+      color: #8C8D46;
+      font-size: 24px;
+      height: 27px;
       margin: 7px;
-      width: 275px;
+      width: 345px;
     }
 }
 

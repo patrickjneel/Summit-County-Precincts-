@@ -4,8 +4,8 @@ import './search.css';
 const Search = () => {
   return (
     <div className="search-area">
-      <h2>Precient-Pro</h2>
-      <input />
+      <h2 className="title">Precient-Pro</h2>
+      <input className="search-bar" />
     </div>
   )
 }
