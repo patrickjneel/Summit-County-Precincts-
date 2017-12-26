@@ -6,7 +6,7 @@ import mockData from './mockData';
 describe('County Object', () => {
   let testHelper;
   beforeEach(() => {
-    testHelper = new Helper();
+    testHelper = new Helper(mockData);
 
   })
 
@@ -20,40 +20,37 @@ describe('County Object', () => {
 
   })
 
-  it('county data should have a key of county', () => {
-    // console.log(testHelper.data)
-    expect.objectContaining({
-      county: expect.any('SUMMIT')
-      
-    })
-  })
+
 
   it('should have a keys of house to and house from', () => {
-    expect.objectContaining({
-      houseNumFrm: expect.any(''),
-      houseNumTo: expect.any('')
-    })
-  })
+    const expectationStart = mockData[0].houseFrom
+    const expectationEnd   = mockData[0].houseTo
+    const results          = testHelper.countyData()[0]
 
-  it('should have a street Code, street Name, and street Type Code', () => {
-    expect.objectContaining({
-      stDisCode: expect.any(''),
-      stName: expect.any(''),
-      stTypeCode: expect.any(''),
-      split: expect.any(null)
-    })
+    expect(results.startAddress).toEqual(expectationStart)
+    expect(results.endAddress).toEqual(expectationEnd)
   })
 
   it('should find the range of house numbers', () => {
     const houseFrom = 1;
     const houseTo = 10;
     const expected = [1,2,3,4,5,6,7,8,9,10]
-    console.log(testHelper.findRange(houseFrom, houseTo))
+    // console.log(testHelper.findRange(houseFrom, houseTo))
     expect(testHelper.findRange(1, 10)).toEqual(expected)
   })
 
-  //add tests for putting mock data in to get a complete data set.
+  it('county data should return an array of objects', () => {
+    expect(Array.isArray(testHelper.countyData()))
+    expect(typeof testHelper.countyData()[0] === 'object')
+  })
 
+  it.only('should allow us to create an array of Addresses based off of the range', () => {
 
+    const theDream = [ { house:'736 W Anemone TRL'}, { house:'737 W Anemone TRL'}, 
+                       { house:'738 W Anemone TRL'} ]
 
+                       console.log(testHelper.countyData()[1])
+    expect(testHelper.countyData()[1].address).toEqual(theDream)    
+
+  })
 });

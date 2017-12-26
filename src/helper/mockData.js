@@ -13,9 +13,9 @@ const mockData = [
       county: 'Summit',
       id: 600917718,
       houseFrom: 736,
-      houseTo: 751,
-      stateDistrictCode: 'W',
-      stName: 'Anemone TRL',
+      houseTo: 738,
+      stateDistrictCode: 'suh',
+      stName: 'dude',
       precinct: 2086159008
     },
 ];
