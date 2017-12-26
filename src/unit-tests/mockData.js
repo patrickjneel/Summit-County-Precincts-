@@ -22,3 +22,14 @@ const mockData = [
 ];
 
 export default mockData;
+
+//precient number
+//congressional district
+//state house 
+//state senate
+//judicial
+//commissioner district
+//school distict
+//CMC
+//Town one ex. Dillion-in or Dillion-Out
+//Lake Dillion Fire Protection
