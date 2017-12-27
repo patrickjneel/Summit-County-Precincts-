@@ -1,6 +1,5 @@
-// import React, { Component } from 'react';
 import  range  from 'lodash/range';
-import mockData from './mockData';
+import csvCleaner from './CSVCleaner';
 
 class Helper {
   constructor(data) {
@@ -39,38 +38,7 @@ findRange(houseFrom, houseTo) {
   }
 
 
-csvHandler(req, res) {
-var fs = require('fs');
-var http = require('http');
-var url = require('url');
-var args = process.argv;
-var type = args[2] || 'text';
-var arr = [];
-var bufferString;
-  fs.readFile('src/unit-tests/precinct8.csv', function(err, data) {
 
-    if(err) {
-      return console.log(err)
-    }
-
-    bufferString = data.toString();
-    arr = bufferString.split('\n');
-    // console.log(arr);
-
-        var jsonObj = [];
-    var headers = arr[0].split(',');
-    for(var i = 1; i < arr.length; i++) {
-      var data = arr[i].split(',');
-      var obj = {};
-      for(var j = 0; j < data.length; j++) {
-         obj[headers[j].trim()] = data[j].trim();
-      }
-      jsonObj.push(obj);
-    }
-    JSON.stringify(jsonObj);
-  console.log(jsonObj)
-  });
- }
 
 }
 
