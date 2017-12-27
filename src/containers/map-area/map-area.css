@@ -1,2 +1,5 @@
 .map-area {
+  position: absolute;
+  height: 500px;
+  width: 500px;
   background-color: pink; }
