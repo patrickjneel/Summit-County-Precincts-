@@ -2,37 +2,36 @@ import  range  from 'lodash/range';
 import precinct from './precinct8';
 import splitData from './precinct8split';
 
+const stingData = JSON.stringify(precinct);
+const parsedData = JSON.parse(stingData);
 
-      // console.log(splitData)
-      // console.log('-------------------------')
-
-
-    const stingData = JSON.stringify(precinct)
-    const parsedData = JSON.parse(stingData);
-
-
+const stringSplit = JSON.stringify(splitData);
+const parsedSplit = JSON.parse(stringSplit);
 
 class Helper {
-  constructor(parsedData) {
+  constructor(parsedData, parsedSplit) {
     this.parsedData = parsedData
+    this.parsedSplit = parsedSplit
   }
 
 
  countyData() {
   const cleaned = parsedData.map(dataObj => {
-    let { COUNTY, RULE_TYPE, PRECINCT, SPLIT_CODE } = dataObj
+    // console.log(dataObj)
+    
+    let { COUNTY, HS_NUM_FRM, HS_NUM_TO, RULE_TYPE, PRECINCT, SPLIT_CODE } = dataObj
 
     return {
       county: COUNTY,
+      HouseFrom: HS_NUM_FRM,
+      houseTo: HS_NUM_TO,
       ruleType: RULE_TYPE,
       fullAddress: this.createAddress(dataObj),
       precinct: PRECINCT,
-      splitCode: SPLIT_CODE
-
+      splitCode: SPLIT_CODE,  
+      splitData: this.dataForSplits()
     }
-
   })
-  
   return cleaned
  }
 
@@ -53,6 +52,19 @@ findRange(houseFrom, houseTo) {
     return range(houseFrom, houseTo + 1)   
   }
 
+dataForSplits() {
+  const splitResults = parsedSplit.map(split => {
+    let { Split, Data } = split
+    // console.log(split.Data.split(','))
+    return {
+      splitNumber: Split,
+      split: Data.split(',')
+    }
+    })
+    return splitResults
+  }
+
 }
+
 
 export default Helper;

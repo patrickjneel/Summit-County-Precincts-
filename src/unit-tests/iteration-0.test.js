@@ -49,8 +49,9 @@ describe('County Object', () => {
 
   });
 
-  it.skip('should have a split code that helps correspond to actual precnietns', () => {
-    expect(testHelper.countyData[1].splitCode).toEqual
+  it.only('should have a split code that helps correspond to actual precnietns', () => {
+    console.log(testHelper.dataForSplits())
+    expect(testHelper.dataForSplits).toEqual([])
   })
 
 });
