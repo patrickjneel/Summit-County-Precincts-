@@ -1,50 +1,57 @@
 import  range  from 'lodash/range';
 import precinct from './precinct8';
+import splitData from './precinct8split';
+
+
+      // console.log(splitData)
+      // console.log('-------------------------')
+
 
     const stingData = JSON.stringify(precinct)
-    const parsedData = JSON.parse(stingData)
+    const parsedData = JSON.parse(stingData);
+
 
 
 class Helper {
   constructor(parsedData) {
     this.parsedData = parsedData
-    // console.log(parsedData)
-    
   }
 
 
  countyData() {
   const cleaned = parsedData.map(dataObj => {
-    console.log(parsedData)
-    console.log(dataObj)
-    console.log(dataObj)
-    let { houseFrom, houseTo, splitCode } = dataObj
-    return {
-      startAddress: houseFrom,
-      endAddress: houseTo,
-      address: this.createAddress(dataObj),
-      splitCode: splitCode
-    }
-  })
+    let { COUNTY, RULE_TYPE, PRECINCT, SPLIT_CODE } = dataObj
 
-  return cleaned
+    return {
+      county: COUNTY,
+      ruleType: RULE_TYPE,
+      fullAddress: this.createAddress(dataObj),
+      precinct: PRECINCT,
+      splitCode: SPLIT_CODE
+
+    }
+
+  })
   
+  return cleaned
  }
 
 createAddress(dataObj) {
-  const { stDistrictCode ,stName ,stTypeCode } = dataObj
-  const addressRange = this.findRange(dataObj.houseFrom, dataObj.houseTo)
-  const baseAddress = `${stDistrictCode} ${stName} ${stTypeCode}`
+  const { STDIR_CODE, STREET_NAME, STYP_CODE } = dataObj
+  const addressRange = this.findRange(dataObj.HS_NUM_FRM, dataObj.HS_NUM_TO)
+  const baseAddress = `${STDIR_CODE} ${STREET_NAME} ${STYP_CODE}`
   const fullAddresses = addressRange.map(address => {
+
     return {
       house: `${address} ${baseAddress}`
     }
   })
+  console.log(fullAddresses)
   return fullAddresses 
 }
 
 findRange(houseFrom, houseTo) {
-  return range(houseFrom, houseTo + 1)   
+    return range(houseFrom, houseTo + 1)   
   }
 
 }
