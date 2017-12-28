@@ -1,41 +1,46 @@
 import  range  from 'lodash/range';
 import precinct from './precinct8';
+import splitData from './precinct8split';
 
-    const stingData = JSON.stringify(precinct)
-    const parsedData = JSON.parse(stingData)
+const stingData = JSON.stringify(precinct);
+const parsedData = JSON.parse(stingData);
 
+const stringSplit = JSON.stringify(splitData);
+const parsedSplit = JSON.parse(stringSplit);
 
 class Helper {
-  constructor(parsedData) {
+  constructor(parsedData, parsedSplit) {
     this.parsedData = parsedData
-    // console.log(parsedData)
-    
+    this.parsedSplit = parsedSplit
   }
 
 
  countyData() {
   const cleaned = parsedData.map(dataObj => {
-    console.log(parsedData)
-    console.log(dataObj)
-    console.log(dataObj)
-    let { houseFrom, houseTo, splitCode } = dataObj
+    // console.log(dataObj)
+    
+    let { COUNTY, HS_NUM_FRM, HS_NUM_TO, RULE_TYPE, PRECINCT, SPLIT_CODE } = dataObj
+
     return {
-      startAddress: houseFrom,
-      endAddress: houseTo,
-      address: this.createAddress(dataObj),
-      splitCode: splitCode
+      county: COUNTY,
+      HouseFrom: HS_NUM_FRM,
+      houseTo: HS_NUM_TO,
+      ruleType: RULE_TYPE,
+      fullAddress: this.createAddress(dataObj),
+      precinct: PRECINCT,
+      splitCode: SPLIT_CODE,  
+      splitData: this.dataForSplits()
     }
   })
-
   return cleaned
-  
  }
 
 createAddress(dataObj) {
-  const { stDistrictCode ,stName ,stTypeCode } = dataObj
-  const addressRange = this.findRange(dataObj.houseFrom, dataObj.houseTo)
-  const baseAddress = `${stDistrictCode} ${stName} ${stTypeCode}`
+  const { STDIR_CODE, STREET_NAME, STYP_CODE } = dataObj
+  const addressRange = this.findRange(dataObj.HS_NUM_FRM, dataObj.HS_NUM_TO)
+  const baseAddress = `${STDIR_CODE} ${STREET_NAME} ${STYP_CODE}`
   const fullAddresses = addressRange.map(address => {
+
     return {
       house: `${address} ${baseAddress}`
     }
@@ -44,12 +49,22 @@ createAddress(dataObj) {
 }
 
 findRange(houseFrom, houseTo) {
-  return range(houseFrom, houseTo + 1)   
+    return range(houseFrom, houseTo + 1)   
+  }
+
+dataForSplits() {
+  const splitResults = parsedSplit.map(split => {
+    let { Split, Data } = split
+    // console.log(split.Data.split(','))
+    return {
+      splitNumber: Split,
+      split: Data.split(',')
+    }
+    })
+    return splitResults
   }
 
 }
 
+
 export default Helper;
-
-
-
