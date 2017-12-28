@@ -1,8 +1,6 @@
 import Helper from '../helper/HelperFunctions';
-// import mockData from './mockData';
-import CSVCleaner from '../helper/CSVCleaner';
+import mockData from './mockData';
 
-let mockData = new CSVCleaner('./precinct8');
 
 describe('County Object', () => {
   let testHelper;
@@ -55,8 +53,4 @@ describe('County Object', () => {
     expect(testHelper.countyData[1].splitCode).toEqual
   })
 
-  it.only('should parse csv data correctlyb', () => { 
-    console.log(mockData)
-    expect(mockData.csvHandler('/precinct8')).toEqual([]);
-  })
 });

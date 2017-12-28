@@ -1,13 +1,23 @@
 import  range  from 'lodash/range';
-import csvCleaner from './CSVCleaner';
+import precinct from './precinct8';
+
+    const stingData = JSON.stringify(precinct)
+    const parsedData = JSON.parse(stingData)
+
 
 class Helper {
-  constructor(data) {
-    this.data = data
+  constructor(parsedData) {
+    this.parsedData = parsedData
+    // console.log(parsedData)
+    
   }
 
+
  countyData() {
-  const cleaned = this.data.map(dataObj => {
+  const cleaned = parsedData.map(dataObj => {
+    console.log(parsedData)
+    console.log(dataObj)
+    console.log(dataObj)
     let { houseFrom, houseTo, splitCode } = dataObj
     return {
       startAddress: houseFrom,
@@ -36,9 +46,6 @@ createAddress(dataObj) {
 findRange(houseFrom, houseTo) {
   return range(houseFrom, houseTo + 1)   
   }
-
-
-
 
 }
 
