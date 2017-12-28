@@ -12,7 +12,7 @@ class MapArea extends Component {
       <div className="map-area">
       <GoogleMapReact
         defaultCenter={{lat: 39.5, lng: -106.06}}
-        defaultZoom={12}
+        defaultZoom={11}
       />
       </div>
     );
