@@ -46,7 +46,6 @@ createAddress(dataObj) {
       house: `${address} ${baseAddress}`
     }
   })
-  console.log(fullAddresses)
   return fullAddresses 
 }
 
@@ -57,6 +56,3 @@ findRange(houseFrom, houseTo) {
 }
 
 export default Helper;
-
-
-
