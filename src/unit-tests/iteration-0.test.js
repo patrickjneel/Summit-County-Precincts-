@@ -1,7 +1,8 @@
 import Helper from '../helper/HelperFunctions';
-import mockData from './mockData';
+// import mockData from './mockData';
+import CSVCleaner from '../helper/CSVCleaner';
 
-// const { countyData } = helper;
+let mockData = new CSVCleaner('./precinct8');
 
 describe('County Object', () => {
   let testHelper;
@@ -20,8 +21,6 @@ describe('County Object', () => {
 
   })
 
-
-
   it('should have a keys of house to and house from', () => {
     const expectationStart = mockData[0].houseFrom
     const expectationEnd   = mockData[0].houseTo
@@ -35,22 +34,29 @@ describe('County Object', () => {
     const houseFrom = 1;
     const houseTo = 10;
     const expected = [1,2,3,4,5,6,7,8,9,10]
-    // console.log(testHelper.findRange(houseFrom, houseTo))
     expect(testHelper.findRange(1, 10)).toEqual(expected)
   })
 
   it('county data should return an array of objects', () => {
     expect(Array.isArray(testHelper.countyData()))
     expect(typeof testHelper.countyData()[0] === 'object')
-  })
+  });
 
-  it.only('should allow us to create an array of Addresses based off of the range', () => {
+  it('should allow us to create an array of Addresses based off of the range', () => {
 
     const theDream = [ { house:'736 W Anemone TRL'}, { house:'737 W Anemone TRL'}, 
                        { house:'738 W Anemone TRL'} ]
 
-                       console.log(testHelper.countyData()[1])
     expect(testHelper.countyData()[1].address).toEqual(theDream)    
 
+  });
+
+  it.skip('should have a split code that helps correspond to actual precnietns', () => {
+    expect(testHelper.countyData[1].splitCode).toEqual
+  })
+
+  it.only('should parse csv data correctlyb', () => { 
+    console.log(mockData)
+    expect(mockData.csvHandler('/precinct8')).toEqual([]);
   })
 });

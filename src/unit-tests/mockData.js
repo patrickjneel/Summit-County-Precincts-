@@ -7,17 +7,19 @@ const mockData = [
       stDistrictCode: 'E',
       stName: 'Anemone',
       stTypeCode: 'TRL',
-      precinct: 2086159008
+      precinct: 2086159008,
+      splitCode: 98
   },
     {
       county: 'Summit',
       id: 600917718,
       houseFrom: 736,
       houseTo: 738,
-      stDistrictCode: 'suh',
-      stName: 'dude',
+      stDistrictCode: 'W',
+      stName: 'Anemone',
       stTypeCode: 'TRL',
-      precinct: 2086159008
+      precinct: 2086159008,
+      splitCode: 26
     },
 ];
 
