@@ -7,11 +7,12 @@ import { createStore } from 'redux';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import rootReducers from '../src/reducers/rootReducers';
-import logger from 'redux-logger'
-const devTools = window._REDUX_DEVTOOLS_EXTENSION_ &&
-  window._REDUX_DEVTOOLS_EXTENSION_()
+import logger from 'redux-logger';
 
-const store = createStore(rootReducers, devTools)
+
+const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+
+const store = createStore(rootReducers, devTools);
 
 ReactDOM.render(
   <Provider store={store}>

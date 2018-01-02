@@ -18,7 +18,7 @@ class Search extends Component {
   render() {
     return (
     <div className="search-area">
-      <h2 className="title">Precient-Pro</h2>
+      <h2 className="title">Precinct-Pro</h2>
       <input 
           className="search-bar"
           value = {this.state.search}
