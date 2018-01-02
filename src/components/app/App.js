@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import Helper from '../../helper/HelperFunctions';
 import parsedData from '../../helper/precinct8';
 import Search from '../search/Search';
-import MapArea from '../../containers/map-area/MapArea';
+import MapArea from '../map-area/MapArea';
+import Data from '../../containers/data/Data';
 import './app.css';
 
-const helper = new Helper(parsedData)
+// const helper = new Helper(parsedData)
 
 class App extends Component {
 
   componentDidMount() {
-    console.log(helper.countyData(parsedData))
-    helper.countyData(parsedData)
+    // console.log('ok?') 
   }
 
   render() {
@@ -19,6 +19,7 @@ class App extends Component {
     return (
       <div className="app">
         <Search />
+        <Data />
         <MapArea />
       </div>
     );

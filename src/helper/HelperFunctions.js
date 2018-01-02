@@ -16,9 +16,7 @@ class Helper {
 
 
  countyData() {
-  const cleaned = parsedData.map(dataObj => {
-    // console.log(dataObj)
-    
+  const cleaned = parsedData.map(dataObj => {    
     let { COUNTY, HS_NUM_FRM, HS_NUM_TO, RULE_TYPE, PRECINCT, SPLIT_CODE } = dataObj
 
     return {
@@ -55,7 +53,6 @@ findRange(houseFrom, houseTo) {
 dataForSplits() {
   const splitResults = parsedSplit.map(split => {
     let { Split, Data } = split
-    // console.log(split.Data.split(','))
     return {
       splitNumber: Split,
       split: Data.split(',')

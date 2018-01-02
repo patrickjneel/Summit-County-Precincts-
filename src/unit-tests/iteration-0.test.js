@@ -15,11 +15,11 @@ describe('County Object', () => {
   });
 
   it('should return an object', () => {
-    expect(typeof testHelper.data).toBe('object')
+    expect(typeof testHelper.parsedData).toBe('object')
 
   })
 
-  it('should have a keys of house to and house from', () => {
+  it.only('should have a keys of house to and house from', () => {
     const expectationStart = mockData[0].houseFrom
     const expectationEnd   = mockData[0].houseTo
     const results          = testHelper.countyData()[0]
@@ -49,8 +49,7 @@ describe('County Object', () => {
 
   });
 
-  it.only('should have a split code that helps correspond to actual precnietns', () => {
-    console.log(testHelper.dataForSplits())
+  it('should have a split code that helps correspond to actual precnietns', () => {
     expect(testHelper.dataForSplits).toEqual([])
   })
 
