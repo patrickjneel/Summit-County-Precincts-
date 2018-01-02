@@ -12,7 +12,6 @@ class Data extends Component {
 
 
 componentDidMount() {
-  // console.log(helper.countyData(parsedData))
   this.props.addData(helper.countyData(parsedData))
 }
 
@@ -26,7 +25,6 @@ render() {
 }
 
 export const mapStateToProps = (store) => {
-  console.log(store)
   return {
     data: store.data
   }
