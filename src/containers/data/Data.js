@@ -8,7 +8,7 @@ import { addData } from '../../actions/Actions';
 
 const helper = new Helper(parsedData)
 
-class Data extends Component {
+export class Data extends Component {
 
 
 componentDidMount() {
