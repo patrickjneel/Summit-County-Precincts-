@@ -1,5 +1,3 @@
-// import helper from '../helper/HelperFunctions'
-
 export const addData = (data) => {
   return {
     type: 'ADD_DATA',
@@ -7,7 +5,3 @@ export const addData = (data) => {
   }
 }
  
-// export const displayData = dispatch => {
-//   const data = countyData
-//   dispatch(addData(data))
-// }
