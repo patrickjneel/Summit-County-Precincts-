@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import './map-area.css';
 
 
-class MapArea extends Component {
-  
+const MapArea = () => {
 
-  render() {
     return (
       <div className="map-area">
       <GoogleMapReact
@@ -16,6 +14,5 @@ class MapArea extends Component {
       </div>
     );
   }
-}
 
 export default MapArea;

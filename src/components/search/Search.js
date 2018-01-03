@@ -15,6 +15,12 @@ class Search extends Component {
     })
   }
 
+  findLocation = async () => {
+    const fetchedLocation = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.state.search}&key=AIzaSyD6W5APnwmrFDwNo8XQ-W5NXHgq6lpvbEg`)
+    const locationData = await fetchedLocation.json();
+    console.log(locationData)
+  }
+
   render() {
     return (
     <div className="search-area">
@@ -24,6 +30,9 @@ class Search extends Component {
           value = {this.state.search}
           onChange={this.handleInput}
           placeholder="Search for Address"/>
+      <button onClick={this.findLocation}>
+      Search
+      </button>
     </div>
   )
   }
