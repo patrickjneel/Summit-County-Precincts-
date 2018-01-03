@@ -17,30 +17,25 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <GoogleMap
-        debounced={true}
-        defaultCenter={
-                Object {
-                        "lat": 39.5,
-                        "lng": -106.06,
-                      }
+      "children": <withGoogleMap(Component)
+        containerElement={
+                <div
+                        style={
+                                Object {
+                                        "height": "100%",
+                                      }
+                        }
+                />
         }
-        defaultZoom={11}
-        distanceToMouse={[Function]}
-        googleMapLoader={[Function]}
-        hoverDistance={30}
-        layerTypes={Array []}
-        options={[Function]}
-        style={
-                Object {
-                        "height": "100%",
-                        "margin": 0,
-                        "padding": 0,
-                        "position": "relative",
-                        "width": "100%",
-                      }
+        mapElement={
+                <div
+                        style={
+                                Object {
+                                        "height": "100%",
+                                      }
+                        }
+                />
         }
-        yesIWantToUseGoogleMapApiInternals={false}
 />,
       "className": "map-area",
     },
@@ -50,25 +45,20 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "debounced": true,
-        "defaultCenter": Object {
-          "lat": 39.5,
-          "lng": -106.06,
-        },
-        "defaultZoom": 11,
-        "distanceToMouse": [Function],
-        "googleMapLoader": [Function],
-        "hoverDistance": 30,
-        "layerTypes": Array [],
-        "options": [Function],
-        "style": Object {
-          "height": "100%",
-          "margin": 0,
-          "padding": 0,
-          "position": "relative",
-          "width": "100%",
-        },
-        "yesIWantToUseGoogleMapApiInternals": false,
+        "containerElement": <div
+          style={
+                    Object {
+                              "height": "100%",
+                            }
+          }
+/>,
+        "mapElement": <div
+          style={
+                    Object {
+                              "height": "100%",
+                            }
+          }
+/>,
       },
       "ref": null,
       "rendered": null,
@@ -82,30 +72,25 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <GoogleMap
-          debounced={true}
-          defaultCenter={
-                    Object {
-                              "lat": 39.5,
-                              "lng": -106.06,
-                            }
+        "children": <withGoogleMap(Component)
+          containerElement={
+                    <div
+                              style={
+                                        Object {
+                                                  "height": "100%",
+                                                }
+                              }
+                    />
           }
-          defaultZoom={11}
-          distanceToMouse={[Function]}
-          googleMapLoader={[Function]}
-          hoverDistance={30}
-          layerTypes={Array []}
-          options={[Function]}
-          style={
-                    Object {
-                              "height": "100%",
-                              "margin": 0,
-                              "padding": 0,
-                              "position": "relative",
-                              "width": "100%",
-                            }
+          mapElement={
+                    <div
+                              style={
+                                        Object {
+                                                  "height": "100%",
+                                                }
+                              }
+                    />
           }
-          yesIWantToUseGoogleMapApiInternals={false}
 />,
         "className": "map-area",
       },
@@ -115,25 +100,20 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "debounced": true,
-          "defaultCenter": Object {
-            "lat": 39.5,
-            "lng": -106.06,
-          },
-          "defaultZoom": 11,
-          "distanceToMouse": [Function],
-          "googleMapLoader": [Function],
-          "hoverDistance": 30,
-          "layerTypes": Array [],
-          "options": [Function],
-          "style": Object {
-            "height": "100%",
-            "margin": 0,
-            "padding": 0,
-            "position": "relative",
-            "width": "100%",
-          },
-          "yesIWantToUseGoogleMapApiInternals": false,
+          "containerElement": <div
+            style={
+                        Object {
+                                    "height": "100%",
+                                  }
+            }
+/>,
+          "mapElement": <div
+            style={
+                        Object {
+                                    "height": "100%",
+                                  }
+            }
+/>,
         },
         "ref": null,
         "rendered": null,
