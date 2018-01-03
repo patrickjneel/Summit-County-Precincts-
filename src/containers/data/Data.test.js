@@ -3,6 +3,17 @@ import { shallow } from 'enzyme';
 import { Data, mapStateToProps, mapDispatchToProps } from './Data';
 
 
+describe('Data Test', () => {
+
+  it('should be defined', () => {
+      const data = shallow(<Data />, {disableLifecycleMethods: true});
+
+    expect(data).toBeDefined();
+  })
+})
+
+
+
 describe('MapStateToProps Test', () => {
   it('should receive data from the store', () => {
     const mockStore = {
