@@ -4,8 +4,15 @@ import Search from './Search';
 
 describe('Search Tests', () => {
 
-  it.only('should be defined', () => {
+  it('should be defined', () => {
   const renderedSearch = shallow(<Search />);
+
   expect(renderedSearch).toBeDefined();
-  })
+  });
+
+  it('should match the snapshot', () => {
+    const renderedSearch = shallow(<Search />);
+
+    expect(renderedSearch).toMatchSnapshot();
+  });
 })
