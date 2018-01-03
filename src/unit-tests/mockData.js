@@ -1,29 +1,18 @@
-// const mockData = [
-//     {
-//       county: 'Summit',
-//       id: 902642,
-//       houseFrom: 701,
-//       houseTo: 889,
-//       stDistrictCode: 'E',
-//       stName: 'Anemone',
-//       stTypeCode: 'TRL',
-//       precinct: 2086159008,
-//       splitCode: 98
-//   },
-//     {
-//       county: 'Summit',
-//       id: 600917718,
-//       houseFrom: 736,
-//       houseTo: 738,
-//       stDistrictCode: 'W',
-//       stName: 'Anemone',
-//       stTypeCode: 'TRL',
-//       precinct: 2086159008,
-//       splitCode: 26
-//     },
-// ];
-
-// export default mockData;
+const mockData = [
+    
+  {
+    "COUNTY": "SUMMIT",
+    "HS_NUM_FRM": 736,
+    "HS_NUM_TO": 738,
+    "RULE_TYPE": 0,
+    "STDIR_CODE": "E",
+    "STREET_NAME": "ANEMONE",
+    "STYP_CODE": "TRL",
+    "PRECINCT": 2086159008,
+    "SPLIT_CODE": 26
+  }
+]
+export default mockData;
 
 //precient number
 //congressional district
