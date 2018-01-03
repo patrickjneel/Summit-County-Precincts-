@@ -7,7 +7,7 @@ package-lock.json
 /coverage
 
 #Api Key
-./apiKey
+../src/apiKey
 
 # production
 /build
