@@ -49,7 +49,7 @@ describe('County Object', () => {
 
   });
 
-  it('should have a split code that helps correspond to actual precnietns', () => {
+  it('should have a split code that helps correspond to actual precints', () => {
     expect(testHelper.dataForSplits).toEqual([])
   })
 
