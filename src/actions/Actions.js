@@ -4,4 +4,11 @@ export const addData = (data) => {
     data
   }
 }
+
+export const filterAddress = (address) => {
+  return {
+    type: 'FILTER_ADDRESS',
+    address
+  }
+}
  
