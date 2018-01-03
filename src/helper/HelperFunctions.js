@@ -36,7 +36,6 @@ class Helper {
 
  baseAddress(dataObj) {
   const { STDIR_CODE, STREET_NAME, STYP_CODE } = dataObj;
-  console.log(`${STDIR_CODE} ${STREET_NAME} ${STYP_CODE}`)
   return `${STDIR_CODE} ${STREET_NAME} ${STYP_CODE}`
  }
 

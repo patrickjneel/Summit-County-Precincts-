@@ -28,9 +28,10 @@ describe('County Object', () => {
     expect(results.endAddress).toEqual(expectationEnd)
   })
 
-  it.only('should have a key of base address that only has street name', () => {
+  it('should have a key of base address that only has street name', () => {
     const expectedKey = mockData[0].baseAddress
-    const results = testHelper.countyData()[0]
+    const results = testHelper.countyData()[0].baseAddress
+    console.log()
     expect(results.baseAddress).toEqual(expectedKey)
   })
 
@@ -46,16 +47,14 @@ describe('County Object', () => {
     expect(typeof testHelper.countyData()[0] === 'object')
   });
 
-  it.skip('should allow us to create an array of Addresses based off of the range', () => {
+  it('should allow us to create an array of Addresses based off of the range', () => {
 
-    const theDream = [ { house:'736 W Anemone TRL'}, { house:'737 W Anemone TRL'}, 
-                       { house:'738 W Anemone TRL'} ]
-                       console.log(testHelper.countyData()[1].fullAddress)
+    const theDream = [{"house": "736 W ANEMONE TRL"}, {"house": "737 W ANEMONE TRL"}, {"house": "738 W ANEMONE TRL"}, {"house": "739 W ANEMONE TRL"}, {"house": "740 W ANEMONE TRL"}, {"house": "741 W ANEMONE TRL"}, {"house": "742 W ANEMONE TRL"}, {"house": "743 W ANEMONE TRL"}, {"house": "744 W ANEMONE TRL"}, {"house": "745 W ANEMONE TRL"}, {"house": "746 W ANEMONE TRL"}, {"house": "747 W ANEMONE TRL"}, {"house": "748 W ANEMONE TRL"}, {"house": "749 W ANEMONE TRL"}, {"house": "750 W ANEMONE TRL"}, {"house": "751 W ANEMONE TRL"}]
     expect(testHelper.countyData()[1].fullAddress).toEqual(theDream)    
 
   });
 
-  it.skip('should have a split code that helps correspond to actual precints', () => {
+  it('should have a split code that helps correspond to actual precints', () => {
     expect(testHelper.dataForSplits).toEqual([])
   })
 
