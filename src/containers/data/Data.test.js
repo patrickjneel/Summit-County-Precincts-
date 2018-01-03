@@ -20,5 +20,19 @@ describe('MapStateToProps Test', () => {
     }
     const expected = mapStateToProps(mockStore)
     expect(expected.data).toEqual(mockStore.data)
-  })
-})
+  });
+});
+
+describe('MapDispatchToProps Test', () => {
+    let mockDispatch;
+    let result;
+
+    beforeEach(() => {
+      mockDispatch = jest.fn();
+      result = mapDispatchToProps(mockDispatch);
+    });
+  it('should dispatch when addData is called', () => {
+    result.addData();
+    expect(mockDispatch).toHaveBeenCalled();
+  });
+});

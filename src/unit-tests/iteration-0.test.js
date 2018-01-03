@@ -28,6 +28,10 @@ describe('County Object', () => {
     expect(results.endAddress).toEqual(expectationEnd)
   })
 
+  it.skip('should have a key of base address that only has street name', () => {
+    
+  })
+
   it('should find the range of house numbers', () => {
     const houseFrom = 1;
     const houseTo = 10;
