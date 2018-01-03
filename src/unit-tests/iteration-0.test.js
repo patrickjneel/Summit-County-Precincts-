@@ -19,7 +19,7 @@ describe('County Object', () => {
 
   })
 
-  it.only('should have a keys of house to and house from', () => {
+  it('should have a keys of house to and house from', () => {
     const expectationStart = mockData[0].houseFrom
     const expectationEnd   = mockData[0].houseTo
     const results          = testHelper.countyData()[0]
@@ -49,7 +49,7 @@ describe('County Object', () => {
 
   });
 
-  it('should have a split code that helps correspond to actual precnietns', () => {
+  it('should have a split code that helps correspond to actual precints', () => {
     expect(testHelper.dataForSplits).toEqual([])
   })
 
