@@ -19,7 +19,11 @@ class Search extends Component {
   findLocation = async () => {
     const fetchedLocation = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.state.search}&key=${APIKey}`)
     const locationData = await fetchedLocation.json();
-    console.log(locationData)
+    const mappedLocation = locationData.results.map(place => {
+      console.log(place.geometry.location)
+      return place.geometry.location
+    })
+
   }
 
   render() {
