@@ -2,9 +2,18 @@
 export const addDataReducer = (store = [], action) => {
   switch(action.type) {
     case 'ADD_DATA':
-    // console.log(action.data)
     return [...action.data]
     default:
     return store;
   }
 }
+
+export const filterAddressReducer = (store = [], action) => {
+  switch(action.type) {
+    case 'FILTER_ADDRESS':
+    return action.data.filter(address => address)
+    default:
+    return store;
+  }
+}
+

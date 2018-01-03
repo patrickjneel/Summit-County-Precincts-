@@ -10,7 +10,6 @@ const helper = new Helper(parsedData)
 
 export class Data extends Component {
 
-
 componentDidMount() {
   this.props.addData(helper.countyData(parsedData))
 }
