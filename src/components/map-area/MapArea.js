@@ -1,6 +1,6 @@
 import React from 'react';
+import {withGoogleMap, GoogleMap, Marker, InfoBox } from "react-google-maps";
 import './map-area.css';
-import {withGoogleMap, GoogleMap, Marker} from "react-google-maps";
 
 const MapWithAMarker = withGoogleMap(props =>
   <GoogleMap
