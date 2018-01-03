@@ -6,6 +6,9 @@ package-lock.json
 # testing
 /coverage
 
+#Api Key
+../apiKey
+
 # production
 /build
 

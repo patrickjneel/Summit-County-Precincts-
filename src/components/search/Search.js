@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import APIKey from '../../apiKey/ApiKey';
 import './search.css';
 
 class Search extends Component {
@@ -15,6 +16,12 @@ class Search extends Component {
     })
   }
 
+  findLocation = async () => {
+    const fetchedLocation = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.state.search}&key=${APIKey}`)
+    const locationData = await fetchedLocation.json();
+    console.log(locationData)
+  }
+
   render() {
     return (
     <div className="search-area">
@@ -24,6 +31,9 @@ class Search extends Component {
           value = {this.state.search}
           onChange={this.handleInput}
           placeholder="Search for Address"/>
+      <button onClick={this.findLocation}>
+      Search
+      </button>
     </div>
   )
   }
