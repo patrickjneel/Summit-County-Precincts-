@@ -24,6 +24,7 @@ class Helper {
       HouseFrom: HS_NUM_FRM,
       houseTo: HS_NUM_TO,
       ruleType: RULE_TYPE,
+      baseAddress: this.baseAddress(dataObj),
       fullAddress: this.createAddress(dataObj),
       precinct: PRECINCT,
       splitCode: SPLIT_CODE,  
@@ -31,6 +32,12 @@ class Helper {
     }
   })
   return cleaned
+ }
+
+ baseAddress(dataObj) {
+  const { STDIR_CODE, STREET_NAME, STYP_CODE } = dataObj;
+  console.log(`${STDIR_CODE} ${STREET_NAME} ${STYP_CODE}`)
+  return `${STDIR_CODE} ${STREET_NAME} ${STYP_CODE}`
  }
 
 createAddress(dataObj) {
