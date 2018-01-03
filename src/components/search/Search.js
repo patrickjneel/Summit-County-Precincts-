@@ -23,6 +23,7 @@ class Search extends Component {
       console.log(place.geometry.location)
       return place.geometry.location
     })
+    this.setState({search: ''})
 
   }
 
