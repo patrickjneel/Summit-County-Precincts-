@@ -11,4 +11,11 @@ export const filterAddress = (address) => {
     address
   }
 }
+
+export const addLocation = (coords) => {
+  return {
+    type: 'ADD_LOCATION',
+    coords
+  }
+}
  

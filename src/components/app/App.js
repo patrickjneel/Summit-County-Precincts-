@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Search from '../search/Search';
 import MapArea from '../map-area/MapArea';
 import Data from '../../containers/data/Data';
+import DataArea from '../../containers/dataArea/DataArea';
 import './App.css';
 
 class App extends Component {
@@ -13,7 +14,10 @@ class App extends Component {
       <div className="app">
         <Search />
         <Data />
-        <MapArea />
+        <div className="bottom">
+          <MapArea />
+          <DataArea />
+        </div>
       </div>
     );
   }

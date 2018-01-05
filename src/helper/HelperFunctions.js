@@ -67,6 +67,17 @@ dataForSplits() {
     return splitResults
   }
 
+    // const strang = "701 E ANEMONE TRL"
+// undefined
+// strang.split(' ')
+// (4) ["701", "E", "ANEMONE", "TRL"]
+// strang.split(' ').slice(1)
+// (3) ["E", "ANEMONE", "TRL"]
+// strang.split(' ').slice(1).join()
+// "E,ANEMONE,TRL"
+// strang.split(' ').slice(1).join(' ')
+// "E ANEMONE TRL"
+ 
 }
 
 
