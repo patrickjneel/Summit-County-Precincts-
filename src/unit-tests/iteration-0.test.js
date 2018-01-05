@@ -63,4 +63,9 @@ describe('County Object', () => {
     expect(testHelper.countyData()[0].splitData).toEqual(expectedData)
   })
 
+  it('should split apart the query', () => {
+    const expected = "E ANEMONE TRL"
+    expect(testHelper.splitQuery()).toEqual(expected)
+  })
+
 });

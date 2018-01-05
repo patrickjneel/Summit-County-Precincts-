@@ -1,6 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import {withGoogleMap, GoogleMap, Marker, InfoBox } from "react-google-maps";
 import './map-area.css';
+import { addLocation } from '../../actions/Actions';
 
 const MapWithAMarker = withGoogleMap(props =>
   <GoogleMap
@@ -15,8 +17,7 @@ const MapWithAMarker = withGoogleMap(props =>
 
 
 
-const MapArea = () => {
-
+const MapArea = () => { 
     return (
       <div className="map-area">
       <MapWithAMarker
@@ -27,4 +28,23 @@ const MapArea = () => {
     );
   }
 
-export default MapArea;
+export const mapStateToProps = (store) => {
+  return {
+    coords: store.coords 
+    
+  }
+}
+
+
+
+export const mapDispatchToProps = (dispatch) => {
+  return {
+    addLocation: (coords) => {
+      dispatch(addLocation(coords))
+    }
+  }
+}
+
+
+export default connect(mapStateToProps, null)(MapArea);
+

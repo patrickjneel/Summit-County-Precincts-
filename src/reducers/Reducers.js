@@ -17,3 +17,12 @@ export const filterAddressReducer = (store = [], action) => {
   }
 }
 
+export const addLocationReducer = (store = [], action) => {
+  switch(action.type) {
+    case 'ADD_LOCATION':
+    return [...action.coords]
+    default:
+    return store;
+  }
+}
+

@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux';
-import { addDataReducer, filterAddressReducer } from './Reducers';
+import { addDataReducer, filterAddressReducer, addLocationReducer } from './Reducers';
 
 const rootReducer = combineReducers({
   data: addDataReducer,
-  data: filterAddressReducer
-})
+  // data: filterAddressReducer,
+  coords: addLocationReducer
+});
 
 export default rootReducer;
