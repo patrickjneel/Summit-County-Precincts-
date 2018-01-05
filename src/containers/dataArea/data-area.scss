@@ -5,6 +5,18 @@
   height: 100vh;
   float: right;
   text-align: center;
-  text-decoration: underline #C5C7A6;
   width: 40%;
+
+  h2 {
+    text-decoration: underline #C5C7A6;
+  }
+
+  .key {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .value {
+    font-size: 18px;
+  }
 }

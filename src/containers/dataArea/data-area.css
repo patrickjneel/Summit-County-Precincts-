@@ -5,5 +5,11 @@
   height: 100vh;
   float: right;
   text-align: center;
-  text-decoration: underline #C5C7A6;
   width: 40%; }
+  .data-area h2 {
+    text-decoration: underline #C5C7A6; }
+  .data-area .key {
+    font-size: 18px;
+    font-weight: 800; }
+  .data-area .value {
+    font-size: 18px; }
