@@ -7,9 +7,12 @@
   text-align: center;
   width: 40%; }
   .data-area h2 {
+    font-size: 29px;
     text-decoration: underline #C5C7A6; }
   .data-area .key {
-    font-size: 18px;
-    font-weight: 800; }
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 25px; }
   .data-area .value {
-    font-size: 18px; }
+    font-size: 20px;
+    padding-left: 20px; }
