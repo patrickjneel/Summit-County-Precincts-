@@ -8,7 +8,7 @@ class DataArea extends Component {
 render() {
   return (
       <div className="data-area">
-        Shit goes here
+        <h2>Home Address Precinct Information</h2>
       </div>
     )
   }
