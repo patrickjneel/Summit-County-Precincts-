@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import './data-area.css';
 
 
@@ -28,4 +27,3 @@ render() {
 
 export default DataArea;
  
- //add table to display the information

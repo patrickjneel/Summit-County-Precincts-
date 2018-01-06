@@ -30,10 +30,10 @@ export class Search extends Component {
       }
       console.log(coordinates)
       this.props.addLocation(coordinates)
+      this.setState({search: this.props.coords})
     })
   }
-      // send the address to the store 
-      // make a some sort of card list component 
+      // send the address to the store  
       // that has access to your data and the filter string in the store 
       // filter through the data by the search adddress 
       // once you have that single address object check to see if the address is within the address range || included in the full address array. 
