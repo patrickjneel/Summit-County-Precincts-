@@ -31,8 +31,9 @@ export class Search extends Component {
       console.log(coordinates)
       this.props.addLocation(coordinates)
       this.setState({search: this.props.coords})
-    })
-  }
+
+    });
+  };
       // send the address to the store  
       // that has access to your data and the filter string in the store 
       // filter through the data by the search adddress 
