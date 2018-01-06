@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import api from '../../API/API';
 import APIKey from '../../apiKey/ApiKey';
+import { addLocation } from '../../actions/Actions';
 import './search.css';
 
-class Search extends Component {
+export class Search extends Component {
   constructor() {
     super();
     this.state = {
@@ -16,17 +19,19 @@ class Search extends Component {
     })
   }
 
-  // findLocation = async () => {
-  //   const fetchedLocation = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.state.search}&key=${APIKey}`)
-  //   const locationData = await fetchedLocation.json();
-  //   const mappedLocation = locationData.results.map(place => {
-  //     console.log(place)
-  //     console.log(place.address_components[1].short_name)
-  //     console.log(place.geometry.location)
-  //     debugger;
-  //     return place.address_components[1].short_name && place.geometry.location
-
-      // this needs to be a conected compoent 
+   findLocation = async () => {
+    const fetchedLocation = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.state.search}&key=${APIKey}`)
+    const locationData = await fetchedLocation.json();
+    const mappedLocation = locationData.results.map(place => {
+  
+      let coordinates =  {
+        address: place.address_components[1].short_name,
+        coordinates: place.geometry.location
+      }
+      console.log(coordinates)
+      this.props.addLocation(coordinates)
+    })
+  }
       // send the address to the store 
       // make a some sort of card list component 
       // that has access to your data and the filter string in the store 
@@ -34,10 +39,8 @@ class Search extends Component {
       // once you have that single address object check to see if the address is within the address range || included in the full address array. 
 
       // if thats true that is your precinct 
-  //   })
-  //   this.setState({search: ''})
+   
 
-  // }
 
   render() {
     return (
@@ -56,4 +59,18 @@ class Search extends Component {
   }
 }
 
-export default Search;
+export const mapStateToProps = (store) => {
+  return {
+    coords: store.coords
+  }
+}
+
+export const mapDispatchToProps = (dispatch) => {
+  return {
+    addLocation: (coords) => {
+      dispatch(addLocation(coords))
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Search);

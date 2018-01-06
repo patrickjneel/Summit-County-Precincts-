@@ -3,7 +3,6 @@ import { addDataReducer, filterAddressReducer, addLocationReducer } from './Redu
 
 const rootReducer = combineReducers({
   data: addDataReducer,
-  // data: filterAddressReducer,
   coords: addLocationReducer
 });
 

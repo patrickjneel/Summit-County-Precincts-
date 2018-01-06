@@ -10,10 +10,16 @@ render() {
       <div className="data-area">
         <h2>Home Address Precinct Information</h2>
         <table>
-          <tr>
-            <td className="key">Address:</td>
-            <td className="value">Expected Location</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td className="key">Address:</td>
+              <td className="value">Expected Location</td>
+            </tr>
+            <tr>
+              <td className="key">Precinct:</td>
+              <td className="value">Expected Precinct</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     )
