@@ -46,14 +46,16 @@ export class Search extends Component {
     return (
     <div className="search-area">
       <h2 className="title">Precinct-Pro</h2>
-      <input 
-          className="search-bar"
-          value = {this.state.search}
-          onChange={this.handleInput}
-          placeholder="Search for Address"/>
-      <button onClick={this.findLocation}>
-      Search
-      </button>
+      <div className="search-bottom">
+        <input 
+            className="search-bar"
+            value = {this.state.search}
+            onChange={this.handleInput}
+            placeholder="Search for Address"/>
+        <button onClick={this.findLocation}>
+        Search
+        </button>
+      </div>
     </div>
   )
   }
