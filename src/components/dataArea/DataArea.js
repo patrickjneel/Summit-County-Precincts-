@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import './data-area.css';
 
 
-class DataArea extends Component {
+const DataArea = () => {
 
-render() {
   return (
       <div className="data-area">
         <h2>Home Address Precinct Information</h2>
@@ -22,7 +21,6 @@ render() {
         </table>
       </div>
     )
-  }
 }
 
 export default DataArea;
