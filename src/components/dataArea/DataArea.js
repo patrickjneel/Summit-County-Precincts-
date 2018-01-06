@@ -17,6 +17,18 @@ const DataArea = () => {
               <td className="key">Precinct:</td>
               <td className="value">Expected Precinct</td>
             </tr>
+            <tr>
+              <td className="key"></td>
+              <td className="value">Dillon</td>
+            </tr>
+            <tr>
+              <td className="key"></td>
+              <td className="value">Lake Dillon Fire Protection</td>
+            </tr>
+            <tr>
+              <td className="key"></td>
+              <td className="value">Lake Dillon Lake Place</td>
+            </tr>
           </tbody>
         </table>
       </div>

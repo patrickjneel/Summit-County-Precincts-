@@ -30,8 +30,7 @@ export class Search extends Component {
       }
       console.log(coordinates)
       this.props.addLocation(coordinates)
-      this.setState({search: this.props.coords})
-
+      
     });
   };
       // send the address to the store  
