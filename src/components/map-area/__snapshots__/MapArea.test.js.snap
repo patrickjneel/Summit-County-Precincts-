@@ -17,7 +17,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <withGoogleMap(Component)
+      "children": <Connect(withGoogleMap(MapWithAMarker))
         containerElement={
                 <div
                         style={
@@ -72,7 +72,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <withGoogleMap(Component)
+        "children": <Connect(withGoogleMap(MapWithAMarker))
           containerElement={
                     <div
                               style={

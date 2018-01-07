@@ -33,9 +33,6 @@ const DataArea = (props) => {
 //if found house return a bunch og jsx
 //else return same side panel, but return new address
 
- if(props.coords.address === foundAddress) {
-  return <div>{foundAddress}</div>;
- }
   return (
       <div className="data-area">
         <h2>Home Address Precinct Information</h2>
@@ -47,7 +44,7 @@ const DataArea = (props) => {
             </tr>
             <tr>
               <td className="key">Precinct:</td>
-              <td className="value">{foundAddress.precinct.toString().slice(-2)}</td>
+              <td className="value">{'08'}</td>
             </tr>
             <tr>
               <td className="key"></td>
@@ -85,6 +82,8 @@ const DataArea = (props) => {
       </div>
     )
 }
+
+// foundAddress.precinct.toString().slice(-2)
 
 export const mapStateToProps = (store) => {
   return {
