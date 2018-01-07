@@ -30,8 +30,10 @@ export class Search extends Component {
       }
       
      return this.props.addLocation(coordinates)
+
       
     });
+    this.setState({search: ''})
   };
        
       // that has access to your data and the filter string in the store 

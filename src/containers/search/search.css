@@ -20,9 +20,10 @@
       margin: 7px 0px;
       width: 345px; }
     .search-area .search-bottom button {
+      border-radius: 3px;
       font-family: 'Montserrat', sans-serif;
       font-size: 18px;
-      height: 21px;
+      height: 25px;
       padding: 0px 20px;
       margin: 12px 10px; }
       .search-area .search-bottom button:hover {
