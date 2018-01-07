@@ -1,21 +1,21 @@
-export const addData = (data) => {
+export const addData = (address) => {
   return {
     type: 'ADD_DATA',
-    data
-  }
-}
+    address
+  };
+};
 
 export const filterAddress = (address) => {
   return {
     type: 'FILTER_ADDRESS',
     address
-  }
-}
+  };
+};
 
 export const addLocation = (coords) => {
   return {
     type: 'ADD_LOCATION',
     coords
-  }
-}
+  };
+};
  

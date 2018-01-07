@@ -28,18 +28,22 @@ export class Search extends Component {
         address: place.address_components[1].short_name,
         coordinates: place.geometry.location
       }
-      console.log(coordinates)
-      this.props.addLocation(coordinates)
-      this.setState({search: this.props.coords})
-
+      
+     return this.props.addLocation(coordinates)
+      
     });
   };
-      // send the address to the store  
+       
       // that has access to your data and the filter string in the store 
       // filter through the data by the search adddress 
       // once you have that single address object check to see if the address is within the address range || included in the full address array. 
 
       // if thats true that is your precinct 
+
+      // loop over every precinct and get driving distance between search and precinct 
+      // push distances to an array
+      // find index of lowest value in that array
+      // return precinct with the same index
    
 
 
@@ -47,14 +51,16 @@ export class Search extends Component {
     return (
     <div className="search-area">
       <h2 className="title">Precinct-Pro</h2>
-      <input 
-          className="search-bar"
-          value = {this.state.search}
-          onChange={this.handleInput}
-          placeholder="Search for Address"/>
-      <button onClick={this.findLocation}>
-      Search
-      </button>
+      <div className="search-bottom">
+        <input 
+            className="search-bar"
+            value = {this.state.search}
+            onChange={this.handleInput}
+            placeholder="Search for Address"/>
+        <button onClick={() => this.findLocation()}>
+        Search
+        </button>
+      </div>
     </div>
   )
   }

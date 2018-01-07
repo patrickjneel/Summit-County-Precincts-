@@ -1,28 +1,30 @@
-
 export const addDataReducer = (store = [], action) => {
-  switch(action.type) {
-    case 'ADD_DATA':
-    return [...action.data]
-    default:
+  switch (action.type) {
+  case 'ADD_DATA':
+    return [...action.address];
+  default:
     return store;
   }
-}
+};
 
 export const filterAddressReducer = (store = [], action) => {
-  switch(action.type) {
-    case 'FILTER_ADDRESS':
-    return action.data.filter(address => address)
-    default:
+  switch (action.type) {
+  case 'FILTER_ADDRESS':
+    return action.data.filter(address => address);
+  default:
     return store;
   }
-}
+};
 
-export const addLocationReducer = (store = [], action) => {
-  switch(action.type) {
-    case 'ADD_LOCATION':
-    return [...action.coords]
-    default:
+export const addLocationReducer = (store = {lat: 39.59, lng: -106.06 }, action) => {
+  switch (action.type) {
+  case 'ADD_LOCATION':
+    return  {
+      lat: action.coords.coordinates.lat,
+      lng: action.coords.coordinates.lng  
+    };  
+  default:
     return store;
   }
-}
+};
 

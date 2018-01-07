@@ -11,7 +11,7 @@ const mockData = [
     "PRECINCT": 2086159008,
     "SPLIT_CODE": 26
   }
-]
+];
 export default mockData;
 
 //precient number
