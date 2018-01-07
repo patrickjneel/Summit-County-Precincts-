@@ -20,8 +20,9 @@ export const addLocationReducer = (store = {lat: 39.59, lng: -106.06 }, action) 
   switch (action.type) {
   case 'ADD_LOCATION':
     return  {
+      address: action.coords.address,
       lat: action.coords.coordinates.lat,
-      lng: action.coords.coordinates.lng  
+      lng: action.coords.coordinates.lng, 
     };  
   default:
     return store;

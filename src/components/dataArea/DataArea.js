@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './data-area.css';
 
 
@@ -43,7 +44,8 @@ const DataArea = () => {
             <tr>
               <td className="key"></td>
               <td className="value">Colorado Mountain College</td>
-            </tr> <tr>
+            </tr> 
+            <tr>
               <td className="key"></td>
               <td className="value">Lake Dillon Fire Protection</td>
             </tr>
@@ -53,4 +55,11 @@ const DataArea = () => {
     )
 }
 
-export default DataArea;
+export const mapStateToProps = (store) => {
+  return {
+    address: store.address,
+    coords: store.coords
+  }
+}
+
+export default connect(mapStateToProps, null)(DataArea);
