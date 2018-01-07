@@ -13,6 +13,7 @@ export const filterAddress = (address) => {
 };
 
 export const addLocation = (coords) => {
+  console.log(coords);
   return {
     type: 'ADD_LOCATION',
     coords

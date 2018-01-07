@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import {withGoogleMap, GoogleMap, Marker, InfoBox } from "react-google-maps";
 
 const MapWithAMarker = (props) => {
-  console.log(props.coords)
   return (
     <GoogleMap
       defaultZoom={11}

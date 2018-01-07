@@ -26,7 +26,8 @@ export class Search extends Component {
   
       let coordinates =  {
         address: place.address_components[1].short_name,
-        coordinates: place.geometry.location
+        coordinates: place.geometry.location,
+        fullAddress: this.state.search
       }
       
      return this.props.addLocation(coordinates)
