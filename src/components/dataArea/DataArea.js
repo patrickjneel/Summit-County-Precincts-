@@ -4,8 +4,7 @@ import './data-area.css';
 
 
 const DataArea = (props) => {
-
-  console.log(props);
+// console.log(props.address)
   let foundAddress = props.address.find(address => {
     const street = new RegExp('\\s*'+props.coords.address+'\\s*', 'i');
     const houseRegex = new RegExp(/\d+/);
@@ -21,17 +20,21 @@ const DataArea = (props) => {
       houseNumber >= address.HouseFrom &&
       houseNumber <= address.houseTo
     ) {
-      console.log('found correct house');
       return true;
     }
 
     return false;
   });
 
-  console.log(foundAddress);
-  // console.log(props.coords);
-//if found house return a bunch og jsx
-//else return same side panel, but return new address
+  let splitInfo = props.address.map(place => {
+    place.splitData.map(local => {
+      console.log(local)
+    })
+  })
+
+    if(!foundAddress) {
+      return <div className="data-area">Please enter a valid address</div>
+    }
 
   return (
       <div className="data-area">
@@ -84,6 +87,7 @@ const DataArea = (props) => {
 }
 
 // foundAddress.precinct.toString().slice(-2)
+
 
 export const mapStateToProps = (store) => {
   return {
