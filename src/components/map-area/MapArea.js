@@ -1,8 +1,8 @@
 import React from 'react';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import './map-area.css';
-import { addLocation } from '../../actions/Actions';
-import MapWithAMarker from './MapWithAMarker';
+// import { addLocation } from '../../actions/Actions';
+import MapWithAMarker from '../../containers/mapWithMarker/MapWithAMarker';
 
 
 const MapArea = () => { 
@@ -16,20 +16,6 @@ const MapArea = () => {
     );
   }
 
-export const mapStateToProps = (store) => {
-  return {
-    coords: store.coords 
-    
-  }
-}
 
-export const mapDispatchToProps = (dispatch) => {
-  return {
-    addLocation: (coords) => {
-      dispatch(addLocation(coords))
-    }
-  }
-}
-
-export default connect(mapStateToProps, null)(MapArea);
+export default MapArea;
 

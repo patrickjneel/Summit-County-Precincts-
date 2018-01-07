@@ -26,12 +26,15 @@ export class Search extends Component {
   
       let coordinates =  {
         address: place.address_components[1].short_name,
-        coordinates: place.geometry.location
+        coordinates: place.geometry.location,
+        fullAddress: this.state.search
       }
       
      return this.props.addLocation(coordinates)
+
       
     });
+    this.setState({search: ''})
   };
        
       // that has access to your data and the filter string in the store 

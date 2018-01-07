@@ -23,8 +23,8 @@ ShallowWrapper {
         <div
           className="bottom"
 >
-          <Connect(MapArea) />
-          <DataArea />
+          <MapArea />
+          <Connect(DataArea) />
 </div>,
       ],
       "className": "app",
@@ -55,8 +55,8 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Connect(MapArea) />,
-            <DataArea />,
+            <MapArea />,
+            <Connect(DataArea) />,
           ],
           "className": "bottom",
         },
@@ -65,7 +65,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {},
             "ref": null,
             "rendered": null,
@@ -74,7 +74,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {},
             "ref": null,
             "rendered": null,
@@ -98,8 +98,8 @@ ShallowWrapper {
           <div
             className="bottom"
 >
-            <Connect(MapArea) />
-            <DataArea />
+            <MapArea />
+            <Connect(DataArea) />
 </div>,
         ],
         "className": "app",
@@ -130,8 +130,8 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Connect(MapArea) />,
-              <DataArea />,
+              <MapArea />,
+              <Connect(DataArea) />,
             ],
             "className": "bottom",
           },
@@ -140,7 +140,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {},
               "ref": null,
               "rendered": null,
@@ -149,7 +149,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "class",
               "props": Object {},
               "ref": null,
               "rendered": null,

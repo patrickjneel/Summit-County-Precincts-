@@ -18,4 +18,6 @@ export const addLocation = (coords) => {
     coords
   };
 };
+
+
  

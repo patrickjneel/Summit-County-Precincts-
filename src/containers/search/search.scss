@@ -27,12 +27,16 @@
     }
 
     button {
+      border-radius: 3px;
       font-family: 'Montserrat', sans-serif;
       font-size: 18px;
-      height: 21px;
+      height: 25px;
       padding: 0px 20px;
       margin: 12px 10px;
-      &:hover { color: #50758C; }
+      &:hover { 
+        background-color: #50758C; 
+        color: white;
+      }
     }
   }
 }
