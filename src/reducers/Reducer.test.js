@@ -4,14 +4,14 @@ import { addDataReducer } from './Reducers';
 describe('Reducers Test', () => {
   it('should return the default store', () => {
 
-    const expected = []
-    expect(addDataReducer(undefined, {})).toEqual(expected)
-  })
+    const expected = [];
+    expect(addDataReducer(undefined, {})).toEqual(expected);
+  });
 
   it('should return a new state with the data', () => {
-    const data = [{county: 'SUMMIT', splitCode: 26, stType: 0}]
-    const expected = [...data]
+    const address = [{county: 'SUMMIT', splitCode: 26, stType: 0}];
+    const expected = [...address];
 
-    expect(addDataReducer(undefined, actions.addData(data))).toEqual(expected)
-  })
-})
+    expect(addDataReducer(undefined, actions.addData(address))).toEqual(expected);
+  });
+});
