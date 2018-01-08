@@ -37,7 +37,10 @@ if(foundAddress) {
 }
   
     if(!foundAddress) {
-      return <div className="data-area">Please search for home address</div>
+      return <div className="data-area">
+                Please search for home address
+                <img src={require("../../assets/sclogo.png")} />
+             </div>
     }
 
   return (
