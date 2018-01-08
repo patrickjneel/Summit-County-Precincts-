@@ -4,6 +4,7 @@ import api from '../../API/API';
 import APIKey from '../../apiKey/ApiKey';
 import { addLocation } from '../../actions/Actions';
 import './search.css';
+import PropTypes from 'prop-types';
 
 export class Search extends Component {
   constructor() {
@@ -71,3 +72,8 @@ export const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search);
+
+Search.propTypes = {
+  coords: PropTypes.object,
+  addLocation: PropTypes.func
+};
