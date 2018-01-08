@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {withGoogleMap, GoogleMap, Marker, InfoBox } from "react-google-maps";
 
-const MapWithAMarker = (props) => {
+export const MapWithAMarker = (props) => {
   return (
     <GoogleMap
       defaultZoom={11}
