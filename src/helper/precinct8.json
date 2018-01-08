@@ -6,7 +6,7 @@
     "RULE_TYPE": 0,
     "STDIR_CODE": "E",
     "STREET_NAME": "ANEMONE",
-    "STYP_CODE": "TRL",
+    "STYP_CODE": "TRAIL",
     "PRECINCT": 2086159008,
     "SPLIT_CODE": 26
   },
@@ -17,7 +17,7 @@
     "RULE_TYPE": 0,
     "STDIR_CODE": "W",
     "STREET_NAME": "ANEMONE",
-    "STYP_CODE": "TRL",
+    "STYP_CODE": "TRAIL",
     "PRECINCT": 2086159008,
     "SPLIT_CODE": 26
   },
@@ -28,7 +28,7 @@
     "RULE_TYPE": 0,
     "STDIR_CODE": "W",
     "STREET_NAME": "ANEMONE",
-    "STYP_CODE": "TRL",
+    "STYP_CODE": "TRAIL",
     "PRECINCT": 2086159008,
     "SPLIT_CODE": 98
   },
@@ -39,7 +39,7 @@
     "RULE_TYPE": 0,
     "STDIR_CODE": "W",
     "STREET_NAME": "ANEMONE",
-    "STYP_CODE": "TRL",
+    "STYP_CODE": "TRAIL",
     "PRECINCT": 2086159008,
     "SPLIT_CODE": 26
   },

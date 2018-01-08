@@ -49,7 +49,7 @@ export class Search extends Component {
             onChange={this.handleInput}
             placeholder="Search for Address"/>
         <button onClick={() => this.findLocation()}>
-        Search
+          Search
         </button>
       </div>
     </div>
