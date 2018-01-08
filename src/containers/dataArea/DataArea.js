@@ -4,12 +4,15 @@ import './data-area.css';
 import PropTypes from 'prop-types';
 
 
-export const DataArea = (props) => {
+const DataArea = (props) => {
   let foundAddress = props.address.find(address => {
     const street = new RegExp('\\s*'+props.coords.address+'\\s*', 'i');
     const houseRegex = new RegExp(/\d+/);
     const getHouse = props.coords.fullAddress.match(houseRegex);
     let houseNumber;
+
+    console.log(street)
+    console.log(getHouse)
 
     if(getHouse) {
       houseNumber = parseInt(getHouse[0]);
@@ -31,7 +34,16 @@ if(foundAddress) {
   splitInfo = foundAddress.splitData.map(thing => {
     if(thing.splitNumber === foundAddress.splitCode) {
       
-      return thing.split 
+      return <div className="split">
+              <span className="value">{thing.split[0]}</span> 
+              <span className="value">{thing.split[1]}</span> 
+              <span className="value">{thing.split[2]}</span> 
+              <span className="value">{thing.split[3]}</span> 
+              <span className="value">{thing.split[4]}</span> 
+              <span className="value">{thing.split[5]}</span> 
+              <span className="value">{thing.split[6]}</span> 
+              <span className="value">{thing.split[7]}</span> 
+            </div>
     }
   })
 }
@@ -56,12 +68,11 @@ if(foundAddress) {
               <td className="key">Precinct:</td>
               <td className="value">{foundAddress.precinct.toString().slice(-2)}</td>
             </tr>
-            <tr>
-              <td className="key"></td>
-              <span className="value">{splitInfo}</span>
-            </tr>
           </tbody>
         </table>
+        <span>
+          {splitInfo}
+        </span>
       </div>
     )
 }
