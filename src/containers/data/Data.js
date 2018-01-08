@@ -4,6 +4,8 @@ import Helper from '../../helper/HelperFunctions';
 import parsedData from '../../helper/precinct8';
 import { addData } from '../../actions/Actions';
 import PropTypes from 'prop-types';
+import Papaparse from 'papaparse';
+import csv from '../../helper/precinct8.csv';
 
  
 
@@ -12,6 +14,7 @@ const helper = new Helper(parsedData)
 export class Data extends Component {
 
 componentDidMount() {
+
   this.props.addData(helper.countyData(parsedData))
 }
 
