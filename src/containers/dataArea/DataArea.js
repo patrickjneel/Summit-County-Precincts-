@@ -32,6 +32,7 @@ const DataArea = (props) => {
 let splitInfo;
 if(foundAddress) {
   splitInfo = foundAddress.splitData.map(thing => {
+    console.log(thing)
     if(thing.splitNumber === foundAddress.splitCode) {
       
       return <div className="split">
