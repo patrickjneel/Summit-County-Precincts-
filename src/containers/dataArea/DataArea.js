@@ -11,9 +11,6 @@ const DataArea = (props) => {
     const getHouse = props.coords.fullAddress.match(houseRegex);
     let houseNumber;
 
-    console.log(street)
-    console.log(getHouse)
-
     if(getHouse) {
       houseNumber = parseInt(getHouse[0]);
     }
@@ -51,8 +48,8 @@ if(foundAddress) {
   
     if(!foundAddress) {
       return <div className="data-area">
-                Please search for home address
                 <img src={require("../../assets/sclogo.png")} />
+                <h3>Please search for home address</h3>
              </div>
     }
 
