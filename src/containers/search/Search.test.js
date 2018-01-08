@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Search from './Search';
+import { Search, mapStateToProps, mapDispatchToProps } from './Search';
 
 describe('Search Tests', () => {
 
