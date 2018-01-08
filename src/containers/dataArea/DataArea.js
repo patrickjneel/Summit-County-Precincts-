@@ -26,18 +26,15 @@ export const DataArea = (props) => {
     return false;
   });
 
-let splitShit;
+let splitInfo;
 if(foundAddress) {
-  splitShit = foundAddress.splitData.map(thing => {
+  splitInfo = foundAddress.splitData.map(thing => {
     if(thing.splitNumber === foundAddress.splitCode) {
-      // console.log(thing.split)
+      
       return thing.split 
     }
   })
 }
-
-
-console.log(splitShit)
   
     if(!foundAddress) {
       return <div className="data-area">Please search for home address</div>
@@ -58,7 +55,7 @@ console.log(splitShit)
             </tr>
             <tr>
               <td className="key"></td>
-              <span className="value">{splitShit}</span>
+              <span className="value">{splitInfo}</span>
             </tr>
             
           </tbody>

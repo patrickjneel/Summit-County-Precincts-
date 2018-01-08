@@ -58,7 +58,7 @@ describe('County Object', () => {
 
   it('should have a split code that helps correspond to actual precints', () => {
 
-    const expectedData = [{"split": ["Congressional 2", " State Senate 8", " State House 61", " Judical 5", " Dillon", " Summit School RE 1", " Colorado Mountain College", " Lake Dillon Fire Protection"], "splitNumber": 26}, {"split": ["Congressional 2", " State Senate 8", " State House 61", " Judical 5", " Dillon Out", " Summit School RE 1Colorado Mountain College", " Lake Dillon Fire Protection", " East Dillon Water District"], "splitNumber": 33}, {"split": ["Congressional 2", " State Senate 8", " State House 61", " Judical 5", " Silverthorne", " Summit School RE 1", " Colorado Mountain College", " Lake Dillon Fire Protection"], "splitNumber": 98}];
+    const expectedData =  [{"split": ["Congressional 2", " State Senate 8", " State House 61", " Judical 5", " Dillon", " Summit School RE 1", " Colorado Mountain College", " Lake Dillon Fire Protection"], "splitNumber": 26}, {"split": ["Congressional 2", " State Senate 8", " State House 61", " Judical 5", " Dillon Out", " Summit School RE 1Colorado Mountain College", " Lake Dillon Fire Protection", " East Dillon Water District"], "splitNumber": 33}, {"split": ["Congressional 2", " State Senate 8", " State House 61", " Judical 5", " Silverthorne", " Summit School RE 1", " Colorado Mountain College", " Lake Dillon Fire Protection"], "splitNumber": 98}, {"split": ["Congressional 2", " State Senate 8", " State House 61", " Judicial 5", " Dillon Out", " Summit School RE-1", " Colorado Mountain College", " Lake Dillon Fire Protection", " East Dillon Water District"], "splitNumber": 86}];
 
     expect(testHelper.countyData()[0].splitData).toEqual(expectedData);
   });
