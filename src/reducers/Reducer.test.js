@@ -1,7 +1,7 @@
 import * as actions from '../actions/Actions';
-import { addDataReducer } from './Reducers';
+import { addDataReducer, addLocationReducer } from './Reducers';
 
-describe('Reducers Test', () => {
+describe('AddData Reducer Test', () => {
   it('should return the default store', () => {
 
     const expected = [];
@@ -13,5 +13,13 @@ describe('Reducers Test', () => {
     const expected = [...address];
 
     expect(addDataReducer(undefined, actions.addData(address))).toEqual(expected);
+  });
+});
+
+describe('AddLocation Reducer Test', () => {
+  it.only('should return the store', () => {
+    const expected = {lat: 39.59, lng: -106.06, fullAddress: ''}
+
+    expect(addLocationReducer(undefined, {})).toEqual(expected);
   });
 });
