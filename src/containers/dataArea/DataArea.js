@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import './data-area.css';
 
 
-const DataArea = (props) => {
+export const DataArea = (props) => {
   let foundAddress = props.address.find(address => {
     const street = new RegExp('\\s*'+props.coords.address+'\\s*', 'i');
     const houseRegex = new RegExp(/\d+/);
@@ -29,7 +29,7 @@ let splitShit;
 if(foundAddress) {
   splitShit = foundAddress.splitData.map(thing => {
     if(thing.splitNumber === foundAddress.splitCode) {
-      console.log(thing.split)
+      // console.log(thing.split)
       return thing.split 
     }
   })
@@ -57,7 +57,7 @@ console.log(splitShit)
             </tr>
             <tr>
               <td className="key"></td>
-              <td className="value">{splitShit}</td>
+              <span className="value">{splitShit}</span>
             </tr>
             
           </tbody>
