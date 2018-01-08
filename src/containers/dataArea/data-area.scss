@@ -27,4 +27,9 @@
     width: 295px;
     height: 100px;
   }
+
+  .split {
+    display: flex;
+    flex-direction: column;
+  }
 }
