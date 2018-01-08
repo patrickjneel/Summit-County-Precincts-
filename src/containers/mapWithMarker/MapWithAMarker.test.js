@@ -4,15 +4,15 @@ import { MapWithAMarker, mapStateToProps } from './MapWithAMarker';
 
 
 describe('MapWithAMarker Test', () => {
-  it.skip('should be defined', () => {
-    const mockLat = 49.05;
-    const mockLng = -106.06;
-    const renderedMap = shallow(<MapWithAMarker lat={mockLat}/>);
+  it('should be defined', () => {
+    const mockCords= {};
+    const renderedMap = shallow(<MapWithAMarker coords={mockCords}/>);
     expect(renderedMap).toBeDefined();
   });
 
-  it.skip('should match snap shot', () => {
-    const renderedMap = shallow(<MapWithAMarker />);
+  it('should match snap shot', () => {
+    const mockCords ={};
+    const renderedMap = shallow(<MapWithAMarker coords={mockCords}/>);
     expect(renderedMap).toMatchSnapshot();
   })
 });
