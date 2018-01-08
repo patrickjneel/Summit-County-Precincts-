@@ -28,10 +28,13 @@ const DataArea = (props) => {
 let splitShit;
 if(foundAddress) {
   splitShit = foundAddress.splitData.map(thing => {
-    console.log(thing.split[1])
-   return thing.split
+    if(thing.splitNumber === foundAddress.splitCode) {
+      console.log(thing.split)
+      return thing.split 
+    }
   })
 }
+
 
 console.log(splitShit)
   
@@ -54,36 +57,9 @@ console.log(splitShit)
             </tr>
             <tr>
               <td className="key"></td>
-              <td className="value">{splitShit[0][0]}</td>
+              <td className="value">{splitShit}</td>
             </tr>
-            <tr>
-              <td className="key"></td>
-              <td className="value">{splitShit[0][1]}</td>
-            </tr>
-            <tr>
-              <td className="key"></td>
-              <td className="value">{splitShit[0][2]}</td>
-            </tr>
-            <tr>
-              <td className="key"></td>
-              <td className="value">{splitShit[0][3]}</td>
-            </tr>
-            <tr>
-              <td className="key"></td>
-              <td className="value">{splitShit[0][4]}</td>
-            </tr>
-            <tr>
-              <td className="key"></td>
-              <td className="value">{splitShit[0][5]}</td>
-            </tr> 
-            <tr>
-              <td className="key"></td>
-              <td className="value">{splitShit[0][6]}</td>
-            </tr>
-            <tr>
-              <td className="key"></td>
-              <td className="value">{splitShit[0][7]}</td>
-            </tr>
+            
           </tbody>
         </table>
       </div>
