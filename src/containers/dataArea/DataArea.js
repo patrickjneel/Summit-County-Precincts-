@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './data-area.css';
+import PropTypes from 'prop-types';
 
 
 export const DataArea = (props) => {
@@ -74,4 +75,9 @@ export const mapStateToProps = (store) => {
 }
 
 export default connect(mapStateToProps, null)(DataArea);
+
+DataArea.propTypes = {
+  address: PropTypes.array,
+  coords: PropTypes.object
+};
            

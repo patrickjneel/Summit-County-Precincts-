@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Helper from '../../helper/HelperFunctions';
 import parsedData from '../../helper/precinct8';
 import { addData } from '../../actions/Actions';
+import PropTypes from 'prop-types';
 
  
 
@@ -39,3 +40,8 @@ export const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Data);
+
+Data.propTypes = {
+  data: PropTypes.array,
+  addData: PropTypes.func
+};

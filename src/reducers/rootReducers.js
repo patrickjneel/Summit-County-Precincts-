@@ -3,8 +3,7 @@ import { addDataReducer, addLocationReducer } from './Reducers';
 
 const rootReducer = combineReducers({
   address: addDataReducer,
-  coords: addLocationReducer,
-  
+  coords: addLocationReducer
 });
 
 export default rootReducer;

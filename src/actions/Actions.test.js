@@ -30,7 +30,7 @@ describe('Actions', () => {
       type: 'ADD_LOCATION',
       coords
     };
-    expect(actions.addLocation(coords)).toEqual(expected)
+    expect(actions.addLocation(coords)).toEqual(expected);
   });
 });
 

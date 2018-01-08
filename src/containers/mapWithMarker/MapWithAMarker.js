@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {withGoogleMap, GoogleMap, Marker, InfoBox } from "react-google-maps";
+import PropTypes from 'prop-types';
 
 export const MapWithAMarker = (props) => {
   return (
@@ -22,5 +23,9 @@ export const mapStateToProps = (store) => {
 const WithMap = withGoogleMap(MapWithAMarker);
 
 export default connect(mapStateToProps, null)(WithMap);
+
+MapWithAMarker.propTypes = {
+  coords: PropTypes.object
+};
 
 

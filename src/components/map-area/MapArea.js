@@ -1,7 +1,5 @@
 import React from 'react';
-// import { connect } from 'react-redux';
 import './map-area.css';
-// import { addLocation } from '../../actions/Actions';
 import MapWithAMarker from '../../containers/mapWithMarker/MapWithAMarker';
 
 

@@ -18,7 +18,7 @@ describe('AddData Reducer Test', () => {
 
 describe('AddLocation Reducer Test', () => {
   it('should return the store', () => {
-    const expected = {lat: 39.59, lng: -106.06, fullAddress: ''}
+    const expected = {lat: 39.59, lng: -106.06, fullAddress: ''};
 
     expect(addLocationReducer(undefined, {})).toEqual(expected);
   });
