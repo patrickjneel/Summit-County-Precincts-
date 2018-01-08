@@ -18,5 +18,19 @@ describe('Actions', () => {
     };
     expect(actions.addData(address)).toEqual(expected);
   });
+
+  it('has a type of add location', () => {
+    const coords = { 
+      address: '',
+      lat: 39.59, 
+      lng: -106.06, 
+      fullAddress: ''
+    };
+    const expected = {
+      type: 'ADD_LOCATION',
+      coords
+    };
+    expect(actions.addLocation(coords)).toEqual(expected)
+  });
 });
 

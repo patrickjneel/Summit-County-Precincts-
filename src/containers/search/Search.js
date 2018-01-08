@@ -37,19 +37,6 @@ export class Search extends Component {
     this.setState({search: ''})
   };
        
-      // that has access to your data and the filter string in the store 
-      // filter through the data by the search adddress 
-      // once you have that single address object check to see if the address is within the address range || included in the full address array. 
-
-      // if thats true that is your precinct 
-
-      // loop over every precinct and get driving distance between search and precinct 
-      // push distances to an array
-      // find index of lowest value in that array
-      // return precinct with the same index
-   
-
-
   render() {
     return (
     <div className="search-area">

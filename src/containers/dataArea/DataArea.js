@@ -3,8 +3,7 @@ import { connect } from 'react-redux';
 import './data-area.css';
 
 
-const DataArea = (props) => {
-console.log(props.coords)
+export const DataArea = (props) => {
   let foundAddress = props.address.find(address => {
     const street = new RegExp('\\s*'+props.coords.address+'\\s*', 'i');
     const houseRegex = new RegExp(/\d+/);
@@ -26,12 +25,19 @@ console.log(props.coords)
     return false;
   });
 
-  let splitInfo = props.address.map(place => {
-    place.splitData.map(local => {
-      // console.log(local)
-    })
+let splitShit;
+if(foundAddress) {
+  splitShit = foundAddress.splitData.map(thing => {
+    if(thing.splitNumber === foundAddress.splitCode) {
+      // console.log(thing.split)
+      return thing.split 
+    }
   })
+}
 
+
+console.log(splitShit)
+  
     if(!foundAddress) {
       return <div className="data-area">Please search for home address</div>
     }
@@ -47,47 +53,18 @@ console.log(props.coords)
             </tr>
             <tr>
               <td className="key">Precinct:</td>
-              <td className="value">{'08'}</td>
+              <td className="value">{foundAddress.precinct.toString().slice(-2)}</td>
             </tr>
             <tr>
               <td className="key"></td>
-              <td className="value">Congressional 2</td>
-            </tr><tr>
-              <td className="key"></td>
-              <td className="value">State Senate 8</td>
+              <span className="value">{splitShit}</span>
             </tr>
-            <tr>
-              <td className="key"></td>
-              <td className="value">State House 61</td>
-            </tr>
-            <tr>
-              <td className="key"></td>
-              <td className="value">Judical 5</td>
-            </tr>
-            <tr>
-              <td className="key"></td>
-              <td className="value">Dillon</td>
-            </tr>
-            <tr>
-              <td className="key"></td>
-              <td className="value">Summit School RE 1</td>
-            </tr>
-            <tr>
-              <td className="key"></td>
-              <td className="value">Colorado Mountain College</td>
-            </tr> 
-            <tr>
-              <td className="key"></td>
-              <td className="value">Lake Dillon Fire Protection</td>
-            </tr>
+            
           </tbody>
         </table>
       </div>
     )
 }
-
-// foundAddress.precinct.toString().slice(-2)
-
 
 export const mapStateToProps = (store) => {
   return {
@@ -97,3 +74,4 @@ export const mapStateToProps = (store) => {
 }
 
 export default connect(mapStateToProps, null)(DataArea);
+           
