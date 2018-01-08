@@ -60,7 +60,6 @@ if(foundAddress) {
               <td className="key"></td>
               <span className="value">{splitInfo}</span>
             </tr>
-            
           </tbody>
         </table>
       </div>
