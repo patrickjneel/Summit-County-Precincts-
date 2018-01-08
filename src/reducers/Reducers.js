@@ -7,16 +7,7 @@ export const addDataReducer = (store = [], action) => {
   }
 };
 
-export const filterAddressReducer = (store = [], action) => {
-  switch (action.type) {
-  case 'FILTER_ADDRESS':
-    return action.data.filter(address => address);
-  default:
-    return store;
-  }
-};
-
-export const addLocationReducer = (store = {lat: 39.59, lng: -106.06 , fullAddress: ''}, action) => {
+export const addLocationReducer = (store = {lat: 39.59, lng: -106.06, fullAddress: ''}, action) => {
   switch (action.type) {
   case 'ADD_LOCATION':
     return  {

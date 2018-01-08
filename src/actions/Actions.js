@@ -5,19 +5,9 @@ export const addData = (address) => {
   };
 };
 
-export const filterAddress = (address) => {
-  return {
-    type: 'FILTER_ADDRESS',
-    address
-  };
-};
-
 export const addLocation = (coords) => {
   return {
     type: 'ADD_LOCATION',
     coords
   };
 };
-
-
- 
