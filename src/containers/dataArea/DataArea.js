@@ -6,8 +6,6 @@ import PropTypes from 'prop-types';
 
 const DataArea = (props) => {
   let foundAddress = props.address.find(address => {
-    console.log(props.coords.fullAddress)
-    console.log(address.baseAddress)
     const street = new RegExp('\\s*'+props.coords.address+'\\s*', 'i');
     const houseRegex = new RegExp(/\d+/);
     const getHouse = props.coords.fullAddress.match(houseRegex);
@@ -16,16 +14,6 @@ const DataArea = (props) => {
     if(getHouse) {
       houseNumber = parseInt(getHouse[0]);
     }
-   
-   console.log(street)
-   console.log(houseRegex)
-   console.log(getHouse)
-    console.log('--------------------')
-    console.log('1st', street.test(address.baseAddress))
-    console.log('--------------------')
-    console.log('2nd', houseNumber >= address.HouseFrom)
-    console.log('--------------------')
-    console.log('3rd', houseNumber <= address.houseTo)
     
     if (
       street.test(address.baseAddress) && 
@@ -53,6 +41,9 @@ if(foundAddress) {
               <span className="value">{thing.split[5]}</span> 
               <span className="value">{thing.split[6]}</span> 
               <span className="value">{thing.split[7]}</span> 
+              <span className="value">{thing.split[8]}</span> 
+              <span className="value">{thing.split[9]}</span> 
+              <span className="value">{thing.split[10]}</span> 
             </div>
     }
   })
