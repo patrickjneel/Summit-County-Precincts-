@@ -4,10 +4,14 @@ import {withGoogleMap, GoogleMap, Marker, InfoBox } from "react-google-maps";
 import PropTypes from 'prop-types';
 
 export const MapWithAMarker = (props) => {
+  
+
+
   return (
     <GoogleMap
-      defaultZoom={11}
-      defaultCenter={{ lat: props.coords.lat, lng: props.coords.lng }}
+      zoom={11}
+      center={{ lat: props.coords.lat, lng: props.coords.lng }}
+      options={{ streetViewControl: false, myTypeControl: false, fullscreenControl: false }}
     >
     <Marker position={{lat: props.coords.lat, lng: props.coords.lng }} />
     </GoogleMap>

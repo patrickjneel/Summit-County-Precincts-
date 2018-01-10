@@ -11,13 +11,10 @@ const DataArea = (props) => {
     const getHouse = props.coords.fullAddress.match(houseRegex);
     let houseNumber;
 
-    console.log(street)
-    console.log(getHouse)
-
     if(getHouse) {
       houseNumber = parseInt(getHouse[0]);
     }
-   
+    
     if (
       street.test(address.baseAddress) && 
       houseNumber >= address.HouseFrom &&
@@ -32,6 +29,7 @@ const DataArea = (props) => {
 let splitInfo;
 if(foundAddress) {
   splitInfo = foundAddress.splitData.map(thing => {
+    console.log(thing)
     if(thing.splitNumber === foundAddress.splitCode) {
       
       return <div className="split">
@@ -43,6 +41,9 @@ if(foundAddress) {
               <span className="value">{thing.split[5]}</span> 
               <span className="value">{thing.split[6]}</span> 
               <span className="value">{thing.split[7]}</span> 
+              <span className="value">{thing.split[8]}</span> 
+              <span className="value">{thing.split[9]}</span> 
+              <span className="value">{thing.split[10]}</span> 
             </div>
     }
   })
@@ -50,8 +51,8 @@ if(foundAddress) {
   
     if(!foundAddress) {
       return <div className="data-area">
-                Please search for home address
                 <img src={require("../../assets/sclogo.png")} />
+                <h3>Please search for home address</h3>
              </div>
     }
 
