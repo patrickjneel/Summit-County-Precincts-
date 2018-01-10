@@ -1,7 +1,7 @@
 export const addDataReducer = (store = [], action) => {
   switch (action.type) {
   case 'ADD_DATA':
-    return [...action.address];
+    return [...store, ...action.address];
   default:
     return store;
   }
