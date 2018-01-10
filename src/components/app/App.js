@@ -13,7 +13,6 @@ class App extends Component {
     return (
       <div className="app">
         <Search />
-        <Data />
         <div className="bottom">
           <MapArea />
           <DataArea />
