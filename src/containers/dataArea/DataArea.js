@@ -12,8 +12,6 @@ class DataArea extends Component {
   componentDidMount() {
   const helper = new Helper();
   const cleaned = helper.countyData(parsedData)
-
-    // console.log(this.props)
   this.props.addData(cleaned);
 }
 
