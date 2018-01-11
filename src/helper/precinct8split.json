@@ -1,62 +1,417 @@
 [
   {
-    "Precinct": 206159006,
+    "Precinct": 2086159001,
+    "Split": 11,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Breckenridge Mountain Metropolitan, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159001,
+    "Split": 15,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159001,
+    "Split": 2,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Blue River, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159001,
+    "Split": "2-opt-out",
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Blue River, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection"
+  },
+  {
+    "Precinct": 2086159001,
+    "Split": 20,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection"
+  },
+  {
+    "Precinct": 2086159001,
+    "Split": 4,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge, Summit School RE 1, Colorado Mountain College, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159002,
+    "Split": 14,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation, Alpensee Water"
+  },
+  {
+    "Precinct": 2086159002,
+    "Split": 16,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159002,
+    "Split": 21,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection"
+  },
+  {
+    "Precinct": 2086159002,
+    "Split": 5,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159002,
+    "Split": 83,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Breckenridge Mountain Metropolitan, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159003,
+    "Split": 1,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Blue River, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159003,
+    "Split": 17,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159003,
+    "Split": 22,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection"
+  },
+  {
+    "Precinct": 2086159003,
+    "Split": "3-opt-out",
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Blue River, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection"
+  },
+  {
+    "Precinct": 2086159003,
+    "Split": "tcw",
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Blue River, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation, Timber Creek Water"
+  },
+  {
+    "Precinct": 2086159004,
+    "Split": 18,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Blue River, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159004,
+    "Split": 23,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection"
+  },
+  {
+    "Precinct": 2086159004,
+    "Split": 6,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159005,
+    "Split": 19,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159005,
+    "Split": 24,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection"
+  },
+  {
+    "Precinct": 2086159005,
+    "Split": 25,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Swans Nest Metropolitan, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159005,
+    "Split": 7,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159006,
     "Split": 31,
     "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, East Dillon Water District"
   },
   {
-    "Precinct": 206159006,
+    "Precinct": 2086159006,
     "Split": 99,
     "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon Out, Summit School RE 1, Colorado Mountain College"
   },
   {
-    "Precinct": 206159008,
+    "Precinct": 2086159007,
+    "Split": 32,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, East Dillon Water District"
+  },
+  {
+    "Precinct": 2086159007,
+    "Split": 35,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159007,
+    "Split": 37,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Snake River Water"
+  },
+  {
+    "Precinct": 2086159007,
+    "Split": 55,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Montezuma, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159007,
+    "Split": 57,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Montezuma Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159008,
     "Split": 26,
     "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
   },
   {
-    "Precinct": 206159008,
+    "Precinct": 2086159008,
     "Split": 33,
     "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon Out, Summit School RE 1Colorado Mountain College, Lake Dillon Fire Protection, East Dillon Water District"
   },
   {
-    "Precinct": 206159008,
+    "Precinct": 2086159008,
     "Split": 98,
     "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
   },
   {
-    "Precinct": 206159009,
+    "Precinct": 2086159009,
     "Split": 27,
     "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
   },
   {
-    "Precinct": 206159009,
+    "Precinct": 2086159009,
     "Split": 28,
     "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Corinthian Hill Metropolitan"
   },
   {
-    "Precinct": 206159009,
+    "Precinct": 2086159009,
     "Split": 30,
     "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Dillon Valley Metropolitan"
   },
   {
-    "Precinct": 206159009,
+    "Precinct": 2086159009,
     "Split": 34,
     "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, East Dillon Water District"
   },
   {
-    "Precinct": 206159009,
+    "Precinct": 2086159009,
     "Split": 38,
     "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon Out, Summit School RE 1, Colorado Mountain College,"
   },
   {
-    "Precinct": 206159009,
+    "Precinct": 2086159009,
     "Split": 41,
     "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
   },
   {
-    "Precinct": 206159019,
+    "Precinct": 2086159010,
+    "Split": 29,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Dillon Valley Metropolitan"
+  },
+  {
+    "Precinct": 2086159010,
+    "Split": 62,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159010,
+    "Split": 66,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159010,
+    "Split": 68,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College"
+  },
+  {
+    "Precinct": 2086159010,
+    "Split": 73,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Hamilton Creek"
+  },
+  {
+    "Precinct": 2086159010,
+    "Split": 77,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159011,
+    "Split": 60,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne, Summit School RE 1, Colorado Mountain College, Eagles Nest Metropolitan"
+  },
+  {
+    "Precinct": 2086159011,
+    "Split": 63,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne, Summit School RE 1, Colorado Mountain College"
+  },
+  {
+    "Precinct": 2086159011,
+    "Split": 69,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College"
+  },
+  {
+    "Precinct": 2086159011,
+    "Split": 74,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Hamilton Creek Metropolitan"
+  },
+  {
+    "Precinct": 2086159011,
+    "Split": 78,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159012,
+    "Split": 67,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Kremmling Memorial Hospital"
+  },
+  {
+    "Precinct": 2086159012,
+    "Split": 70,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College"
+  },
+  {
+    "Precinct": 2086159012,
+    "Split": 75,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Kremmling Memorial Hospital"
+  },
+  {
+    "Precinct": 2086159012,
+    "Split": 76,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lower Blue Fire Protection, Kremmling Memorial Hospital"
+  },
+  {
+    "Precinct": 2086159012,
+    "Split": 84,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Kremmling Memorial Hospital, Heeney Water"
+  },
+  {
+    "Precinct": 2086159012,
+    "Split": 96,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Kremmling Memorial Hospital"
+  },
+  {
+    "Precinct": 2086159012,
+    "Split": 97,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159013,
+    "Split": 59,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159013,
+    "Split": 61,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Eagles Nest Metropolitan"
+  },
+  {
+    "Precinct": 2086159013,
+    "Split": 71,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College"
+  },
+  {
+    "Precinct": 2086159013,
+    "Split": 79,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159014,
+    "Split": 72,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Buffalo Mountain Metropolitan"
+  },
+  {
+    "Precinct": 2086159015,
+    "Split": 42,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Frisco, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Frisco Sanitation"
+  },
+  {
+    "Precinct": 2086159015,
+    "Split": 45,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Frisco, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159015,
+    "Split": 49,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Frisco Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Frisco Sanitation"
+  },
+  {
+    "Precinct": 2086159015,
+    "Split": 52,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Frisco Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159016,
+    "Split": 43,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Frisco, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Frisco Sanitation"
+  },
+  {
+    "Precinct": 2086159016,
+    "Split": 47,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Frisco Out, Summit School RE 1, Colorado Mountain College"
+  },
+  {
+    "Precinct": 2086159016,
+    "Split": 48,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Frisco Out, Summit School RE 1, Colorado Mountain College, Copper Mountain Consolidated Metropolitan"
+  },
+  {
+    "Precinct": 2086159016,
+    "Split": 50,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Frisco Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Frisco Sanitation"
+  },
+  {
+    "Precinct": 2086159016,
+    "Split": 53,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Frisco Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159017,
+    "Split": 44,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Frisco, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Frisco Sanitation"
+  },
+  {
+    "Precinct": 2086159017,
+    "Split": 51,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Frisco Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Frisco Sanitation"
+  },
+  {
+    "Precinct": 2086159017,
+    "Split": 54,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Frisco Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159018,
+    "Split": 87,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159018,
+    "Split": 88,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection, Upper Blue Sanitation"
+  },
+  {
+    "Precinct": 2086159018,
+    "Split": 89,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Breckenridge Out, Summit School RE 1, Colorado Mountain College, Red White & Blue Fire Protection"
+  },
+  {
+    "Precinct": 2086159019,
     "Split": 86,
     "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Dillon Out, Summit School RE-1, Colorado Mountain College, Lake Dillon Fire Protection, East Dillon Water District"
+  },
+  {
+    "Precinct": 2086159020,
+    "Split": 90,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159020,
+    "Split": 91,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Buffalo Mountain Metropolitan"
+  },
+  {
+    "Precinct": 2086159020,
+    "Split": 92,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection"
+  },
+  {
+    "Precinct": 2086159020,
+    "Split": 93,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Mesa Cortina Water and Sanitation"
+  },
+  {
+    "Precinct": 2086159020,
+    "Split": 94,
+    "Data": "Congressional 2, State Senate 8, State House 61, Judicial 5, Silverthorne Out, Summit School RE 1, Colorado Mountain College, Lake Dillon Fire Protection, Willow Brook Metropolitan"
   }
 ]
