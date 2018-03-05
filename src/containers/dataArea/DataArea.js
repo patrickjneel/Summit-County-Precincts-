@@ -4,8 +4,6 @@ import Helper from '../../helper/HelperFunctions';
 import { addData } from '../../actions/Actions';
 import './data-area.css';
 import PropTypes from 'prop-types';
-import Papa from 'papaparse';
-import final from '../../helper/finalAddress.csv';
 
 
 class DataArea extends Component {
