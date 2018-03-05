@@ -1,12 +1,28 @@
 import  range  from 'lodash/range';
 import precinct from './precinct8';
 import splitData from './precinct8split';
+import Papa from 'papaparse';
+import county from './allAddresses.csv';
+
 
 const stingData = JSON.stringify(precinct);
 const parsedData = JSON.parse(stingData);
 
 const stringSplit = JSON.stringify(splitData);
 const parsedSplit = JSON.parse(stringSplit);
+
+// let data;
+// console.log(data)
+
+// let allData = Papa.parse(county, {
+//   header: true,
+//   download: true,
+//   complete: async(results) => {
+//   data = await results.data;
+//   console.log(data);
+//   // return data;
+// }
+// })
 
 class Helper {
   constructor(parsedData, parsedSplit) {
