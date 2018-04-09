@@ -29,7 +29,6 @@ export class Search extends Component {
         coordinates: place.geometry.location,
         fullAddress: this.state.search
       } 
-      // console.log(coordinates)
      return this.props.addLocation(coordinates)      
      });
     this.setState({search: ''})
