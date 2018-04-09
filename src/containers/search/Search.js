@@ -6,6 +6,7 @@ import { addLocation } from '../../actions/Actions';
 import './search.css';
 import PropTypes from 'prop-types';
 
+
 export class Search extends Component {
   constructor() {
     super();

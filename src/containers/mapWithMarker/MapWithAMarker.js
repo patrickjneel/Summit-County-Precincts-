@@ -10,8 +10,7 @@ export class MapWithAMarker extends Component {
       zoom: 11
     }
   }
-
-
+  
   render() {
     console.log(this.state.zoom)
     return (
