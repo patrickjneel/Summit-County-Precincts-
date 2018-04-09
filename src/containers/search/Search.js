@@ -6,11 +6,13 @@ import { addLocation } from '../../actions/Actions';
 import './search.css';
 import PropTypes from 'prop-types';
 
+
 export class Search extends Component {
   constructor() {
     super();
     this.state = {
-      search: ''
+      search: '',
+      // zoom: 11
     }
   }
   
@@ -33,6 +35,10 @@ export class Search extends Component {
      });
     this.setState({search: ''})
   };
+
+  // zoomOut() {
+  //   this.setState({zoom: 11})
+  // }
        
   render() {
     return (
@@ -43,7 +49,9 @@ export class Search extends Component {
             className="search-bar"
             value = {this.state.search}
             onChange={this.handleInput}
-            placeholder="Search for Address"/>
+            placeholder="Search for Address"
+            // onMouseEnter={this.zoomOut}
+        />
         <button onClick={() => this.findLocationData()}>
           Search
         </button>

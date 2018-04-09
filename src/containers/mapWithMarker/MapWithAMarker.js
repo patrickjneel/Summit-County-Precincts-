@@ -1,21 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {withGoogleMap, GoogleMap, Marker, InfoBox } from "react-google-maps";
 import PropTypes from 'prop-types';
 
-export const MapWithAMarker = (props) => {
+export class MapWithAMarker extends Component {
+  constructor() {
+    super()
+    this.state = {
+      zoom: 11
+    }
+  }
   
-
-
-  return (
-    <GoogleMap
-      zoom={11}
-      center={{ lat: props.coords.lat, lng: props.coords.lng }}
-      options={{ streetViewControl: false, myTypeControl: false, fullscreenControl: false }}
-    >
-    <Marker position={{lat: props.coords.lat, lng: props.coords.lng }} />
-    </GoogleMap>
-  )
+  render() {
+    console.log(this.state.zoom)
+    return (
+      <GoogleMap
+        zoom={this.state.zoom++}
+        center={{ lat: this.props.coords.lat, lng: this.props.coords.lng }}
+        options={{ streetViewControl: false, myTypeControl: false, fullscreenControl: false }}
+      >
+      <Marker position={{lat: this.props.coords.lat, lng: this.props.coords.lng }} />
+      </GoogleMap>
+    ) 
+  }
 }
 
 export const mapStateToProps = (store) => {
