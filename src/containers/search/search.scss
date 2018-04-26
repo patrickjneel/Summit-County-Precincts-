@@ -41,4 +41,12 @@
   }
 }
 
+@media (max-width: 400px) {
+  .search-area {
+    .search-bottom {
+      flex-direction: column;
+    }
+  }
+}
+
 

@@ -83,11 +83,12 @@ if(foundAddress) {
               <td className="key">Precinct:</td>
               <td className="value">{foundAddress.precinct.toString().slice(-2)}</td>
             </tr>
+            <tr>
+              <td className="key">Precinct Information:</td>
+              <td className="value">{infoData}</td>
+            </tr>
           </tbody>
         </table>
-        <span>
-          {infoData}
-        </span>
       </div>
     )
   } else {
