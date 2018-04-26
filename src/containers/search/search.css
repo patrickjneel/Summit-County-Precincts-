@@ -29,3 +29,7 @@
       .search-area .search-bottom button:hover {
         background-color: #50758C;
         color: white; }
+
+@media (max-width: 400px) {
+  .search-area .search-bottom {
+    flex-direction: column; } }
