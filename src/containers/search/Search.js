@@ -12,7 +12,6 @@ export class Search extends Component {
     super();
     this.state = {
       search: '',
-      // zoom: 11
     }
   }
   
@@ -35,11 +34,7 @@ export class Search extends Component {
      });
     this.setState({search: ''})
   };
-
-  // zoomOut() {
-  //   this.setState({zoom: 11})
-  // }
-       
+     
   render() {
     return (
     <div className="search-area">
@@ -50,9 +45,8 @@ export class Search extends Component {
             value = {this.state.search}
             onChange={this.handleInput}
             placeholder="Search for Address"
-            // onMouseEnter={this.zoomOut}
         />
-        <button onClick={() => this.findLocationData()}>
+        <button onClick={this.findLocationData}>
           Search
         </button>
       </div>

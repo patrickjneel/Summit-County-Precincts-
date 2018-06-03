@@ -39,20 +39,20 @@ findAddress() {
 splitInfo(foundAddress) {
 let splitInfo;
 if(foundAddress) {
-  return foundAddress.splitData.map(thing => {
-    if(thing.splitNumber === foundAddress.splitCode) {
+  return foundAddress.splitData.map(info => {
+    if(info.splitNumber === foundAddress.splitCode) {
       return <div className="split">
-              <span className="value">{thing.split[0]}</span> 
-              <span className="value">{thing.split[1]}</span> 
-              <span className="value">{thing.split[2]}</span> 
-              <span className="value">{thing.split[3]}</span> 
-              <span className="value">{thing.split[4]}</span> 
-              <span className="value">{thing.split[5]}</span> 
-              <span className="value">{thing.split[6]}</span> 
-              <span className="value">{thing.split[7]}</span> 
-              <span className="value">{thing.split[8]}</span> 
-              <span className="value">{thing.split[9]}</span> 
-              <span className="value">{thing.split[10]}</span> 
+              <span className="value">{info.split[0]}</span> 
+              <span className="value">{info.split[1]}</span> 
+              <span className="value">{info.split[2]}</span> 
+              <span className="value">{info.split[3]}</span> 
+              <span className="value">{info.split[4]}</span> 
+              <span className="value">{info.split[5]}</span> 
+              <span className="value">{info.split[6]}</span> 
+              <span className="value">{info.split[7]}</span> 
+              <span className="value">{info.split[8]}</span> 
+              <span className="value">{info.split[9]}</span> 
+              <span className="value">{info.split[10]}</span> 
             </div>
     }
   })

@@ -12,7 +12,6 @@ export class MapWithAMarker extends Component {
   }
   
   render() {
-    console.log(this.state.zoom)
     return (
       <GoogleMap
         zoom={this.state.zoom++}

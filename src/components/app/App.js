@@ -5,8 +5,6 @@ import DataArea from '../../containers/dataArea/DataArea';
 import './App.css';
 
 class App extends Component {
-
-
   render() {
 
     return (
