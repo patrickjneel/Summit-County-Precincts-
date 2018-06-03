@@ -24,7 +24,7 @@ export class Search extends Component {
    findLocationData = async () => {
     const coordinatesData = await api.fetchLocation(this.state.search);
     const mappedData = coordinatesData.results.map(place => {
-      
+
       let coordinates =  {
         address: place.address_components[1].short_name,
         coordinates: place.geometry.location,
