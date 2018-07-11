@@ -33,3 +33,14 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 400px) {
+  .data-area {
+    position: relative;
+    top: 402px;
+    float: unset;
+    height: unset;
+    padding-bottom: 50px;
+    width: 100%
+  }
+}
